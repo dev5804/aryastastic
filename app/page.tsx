@@ -1,102 +1,266 @@
-import Image from "next/image";
+'use client';
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <div className="min-h-screen bg-slate-50">
+      {/* Hero Section - Split Screen */}
+      <section className="relative min-h-screen flex pt-16">
+        {/* Left Side - Visual/Abstract */}
+        <div className="w-1/2 bg-gradient-to-br from-teal-100 via-cyan-50 to-slate-100 relative overflow-hidden">
+          <div className="absolute inset-0 flex items-center justify-center">
+            {/* Abstract geometric shapes */}
+            <div className="relative w-full h-full">
+              <div className="absolute top-20 left-20 w-32 h-32 bg-teal-300 rounded-full opacity-60"></div>
+              <div className="absolute top-40 right-32 w-24 h-24 bg-cyan-300 rounded-2xl opacity-70 rotate-12"></div>
+              <div className="absolute bottom-40 left-32 w-40 h-40 bg-slate-200 rounded-full opacity-50"></div>
+              <div className="absolute bottom-20 right-20 w-28 h-28 bg-teal-200 rounded-2xl opacity-60 -rotate-12"></div>
+              <div className="absolute top-60 left-60 w-20 h-20 bg-cyan-400 rounded-full opacity-40"></div>
+              <div className="absolute top-32 left-1/2 w-36 h-36 border-4 border-teal-200 rounded-full opacity-30"></div>
+            </div>
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
+
+        {/* Right Side - Content */}
+        <div className="w-1/2 bg-white flex items-center justify-center">
+          <div className="max-w-lg px-12">
+            <div className="mb-8">
+              <span className="inline-block px-4 py-2 bg-teal-50 rounded-full text-teal-700 text-sm font-medium tracking-wide">
+                STATISTICAL CONSULTING
+              </span>
+            </div>
+            <h1 className="text-6xl font-light text-slate-800 mb-8 tracking-tight leading-tight">
+              WE ARE<br />
+              ARYA<br />
+              STATISTICS
+            </h1>
+            <p className="text-lg text-slate-600 mb-12 leading-relaxed font-light">
+              A statistical consultancy firm based in academia, specializing in research methodology and data analysis.
+            </p>
+            <div className="flex flex-col gap-4">
+              <button className="px-8 py-3 bg-teal-600 text-white rounded-lg font-medium text-left hover:bg-teal-700 transition-all duration-300">
+                Start Your Project
+              </button>
+              <button className="px-8 py-3 text-slate-600 rounded-lg font-medium text-left hover:text-slate-800 transition-all duration-300">
+                View Our Work
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Services Section */}
+      <section id="services" className="py-32 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+            <div>
+              <h2 className="text-5xl font-light text-slate-800 mb-12 tracking-tight leading-tight">
+                OUR<br />
+                SERVICES
+              </h2>
+            </div>
+            <div className="space-y-12">
+              {[
+                {
+                  number: "01",
+                  title: "Statistical Analysis",
+                  description: "Advanced data analysis using modern statistical methods and machine learning techniques for research excellence."
+                },
+                {
+                  number: "02",
+                  title: "Research Design",
+                  description: "Expert consultation on study design, methodology, and experimental planning to ensure robust outcomes."
+                },
+                {
+                  number: "03",
+                  title: "Data Management",
+                  description: "Professional data cleaning, validation, and management using industry-standard tools and practices."
+                },
+                {
+                  number: "04",
+                  title: "Publication Support",
+                  description: "Statistical review and methodology validation for journal submissions and academic publications."
+                }
+              ].map((service, index) => (
+                <div key={index} className="group border-b border-slate-100 pb-8">
+                  <div className="flex items-start gap-6">
+                    <span className="text-2xl font-light text-teal-400 mt-1">{service.number}</span>
+                    <div className="flex-1">
+                      <h3 className="text-xl font-medium text-slate-800 mb-3">{service.title}</h3>
+                      <p className="text-slate-600 leading-relaxed font-light">{service.description}</p>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* About Section - Split Screen */}
+      <section id="about" className="min-h-screen flex">
+        {/* Left Side - Content */}
+        <div className="w-1/2 bg-slate-50 flex items-center justify-center">
+          <div className="max-w-lg px-12">
+            <h2 className="text-5xl font-light text-slate-800 mb-12 tracking-tight leading-tight">
+              EXPERT<br />
+              STATISTICAL<br />
+              CONSULTING
+            </h2>
+            <div className="space-y-8">
+              <div>
+                <h3 className="text-lg font-medium text-slate-800 mb-3">Advanced Expertise</h3>
+                <p className="text-slate-600 font-light leading-relaxed">PhD-level statisticians with multi-domain experience across academia and industry.</p>
+              </div>
+              <div>
+                <h3 className="text-lg font-medium text-slate-800 mb-3">Proven Results</h3>
+                <p className="text-slate-600 font-light leading-relaxed">500+ successful projects with 98% client satisfaction rate.</p>
+              </div>
+              <div>
+                <h3 className="text-lg font-medium text-slate-800 mb-3">Quality Assured</h3>
+                <p className="text-slate-600 font-light leading-relaxed">Rigorous review process for all deliverables and methodologies.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Right Side - Stats Visual */}
+        <div className="w-1/2 bg-white flex items-center justify-center relative">
+          <div className="grid grid-cols-2 gap-16 text-center">
+            <div className="relative">
+              <div className="absolute -top-4 -left-4 w-20 h-20 bg-teal-100 rounded-full opacity-50"></div>
+              <div className="text-6xl font-light text-teal-600 mb-4">500+</div>
+              <div className="text-slate-600 text-sm font-medium uppercase tracking-wide">Projects</div>
+            </div>
+            <div className="relative">
+              <div className="absolute -top-4 -right-4 w-16 h-16 bg-cyan-100 rounded-2xl opacity-60 rotate-12"></div>
+              <div className="text-6xl font-light text-cyan-600 mb-4">15+</div>
+              <div className="text-slate-600 text-sm font-medium uppercase tracking-wide">Years</div>
+            </div>
+            <div className="relative">
+              <div className="absolute -bottom-4 -left-4 w-18 h-18 bg-teal-200 rounded-full opacity-40"></div>
+              <div className="text-6xl font-light text-teal-500 mb-4">98%</div>
+              <div className="text-slate-600 text-sm font-medium uppercase tracking-wide">Satisfaction</div>
+            </div>
+            <div className="relative">
+              <div className="absolute -bottom-4 -right-4 w-14 h-14 bg-cyan-200 rounded-2xl opacity-50 -rotate-12"></div>
+              <div className="text-6xl font-light text-cyan-500 mb-4">50+</div>
+              <div className="text-slate-600 text-sm font-medium uppercase tracking-wide">Publications</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Contact Section - Split Screen */}
+      <section id="contact" className="min-h-screen flex">
+        {/* Left Side - Abstract Visual */}
+        <div className="w-1/2 bg-gradient-to-br from-slate-100 via-teal-50 to-cyan-100 relative overflow-hidden">
+          <div className="absolute inset-0">
+            <div className="absolute top-32 left-24 w-40 h-40 bg-teal-200 rounded-3xl opacity-40 rotate-12"></div>
+            <div className="absolute bottom-32 right-24 w-36 h-36 bg-cyan-200 rounded-full opacity-50"></div>
+            <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-48 h-48 border-4 border-teal-300 rounded-full opacity-20"></div>
+            <div className="absolute top-20 right-32 w-24 h-24 bg-slate-300 rounded-2xl opacity-30 -rotate-12"></div>
+          </div>
+        </div>
+
+        {/* Right Side - Contact Form */}
+        <div className="w-1/2 bg-white flex items-center justify-center">
+          <div className="max-w-lg px-12 w-full">
+            <h2 className="text-5xl font-light text-slate-800 mb-12 tracking-tight leading-tight">
+              GET IN<br />
+              TOUCH
+            </h2>
+            
+            <div className="space-y-6 mb-12">
+              <div>
+                <h3 className="text-lg font-medium text-slate-800 mb-2">Email</h3>
+                <p className="text-slate-600 font-light">info@aryastatistics.com</p>
+              </div>
+              <div>
+                <h3 className="text-lg font-medium text-slate-800 mb-2">Response Time</h3>
+                <p className="text-slate-600 font-light">Within 24 hours</p>
+              </div>
+            </div>
+
+            <form className="space-y-6">
+              <div>
+                <input 
+                  type="text" 
+                  className="w-full px-0 py-4 border-0 border-b-2 border-slate-200 focus:border-teal-400 focus:ring-0 bg-transparent text-slate-800 placeholder-slate-400 transition-all"
+                  placeholder="Your Name"
+                />
+              </div>
+              <div>
+                <input 
+                  type="email" 
+                  className="w-full px-0 py-4 border-0 border-b-2 border-slate-200 focus:border-teal-400 focus:ring-0 bg-transparent text-slate-800 placeholder-slate-400 transition-all"
+                  placeholder="Email Address"
+                />
+              </div>
+              <div>
+                <input 
+                  type="text" 
+                  className="w-full px-0 py-4 border-0 border-b-2 border-slate-200 focus:border-teal-400 focus:ring-0 bg-transparent text-slate-800 placeholder-slate-400 transition-all"
+                  placeholder="Organization"
+                />
+              </div>
+              <div>
+                <textarea 
+                  rows={3} 
+                  className="w-full px-0 py-4 border-0 border-b-2 border-slate-200 focus:border-teal-400 focus:ring-0 bg-transparent text-slate-800 placeholder-slate-400 transition-all resize-none"
+                  placeholder="Tell us about your project..."
+                ></textarea>
+              </div>
+              <button 
+                type="submit" 
+                className="w-full py-4 bg-teal-600 text-white rounded-lg font-medium hover:bg-teal-700 transition-all duration-300 mt-8"
+              >
+                Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer className="py-16 bg-slate-50 border-t border-slate-200">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
+            <div>
+              <h3 className="text-xl font-medium text-slate-800 mb-6">Arya Statistics</h3>
+              <p className="text-slate-600 font-light leading-relaxed">
+                Professional statistical consulting for researchers worldwide.
+              </p>
+            </div>
+            <div>
+              <h4 className="text-slate-800 font-medium mb-6 uppercase tracking-wide text-sm">Services</h4>
+              <ul className="space-y-3 text-slate-600 font-light">
+                <li><a href="#" className="hover:text-teal-600 transition-colors">Statistical Analysis</a></li>
+                <li><a href="#" className="hover:text-teal-600 transition-colors">Research Design</a></li>
+                <li><a href="#" className="hover:text-teal-600 transition-colors">Data Management</a></li>
+                <li><a href="#" className="hover:text-teal-600 transition-colors">Publication Support</a></li>
+              </ul>
+            </div>
+            <div>
+              <h4 className="text-slate-800 font-medium mb-6 uppercase tracking-wide text-sm">Company</h4>
+              <ul className="space-y-3 text-slate-600 font-light">
+                <li><a href="#" className="hover:text-teal-600 transition-colors">About</a></li>
+                <li><a href="#" className="hover:text-teal-600 transition-colors">Team</a></li>
+                <li><a href="#" className="hover:text-teal-600 transition-colors">Portfolio</a></li>
+                <li><a href="#" className="hover:text-teal-600 transition-colors">Contact</a></li>
+              </ul>
+            </div>
+            <div>
+              <h4 className="text-slate-800 font-medium mb-6 uppercase tracking-wide text-sm">Contact</h4>
+              <div className="space-y-3 text-slate-600 font-light">
+                <p>info@aryastatistics.com</p>
+                <p>+1 (555) 123-STAT</p>
+              </div>
+            </div>
+          </div>
+          <div className="border-t border-slate-200 mt-16 pt-8 text-center text-slate-500 text-sm">
+            <p>&copy; 2024 Arya Statistics. All rights reserved.</p>
+          </div>
+        </div>
       </footer>
     </div>
   );
