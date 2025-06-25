@@ -39,32 +39,6 @@ export default function CalculatorPage() {
   };
 
   // Statistical functions
-  const normalInverse = (p: number): number => {
-    // Approximation of inverse normal distribution (z-score)
-    // Using Beasley-Springer-Moro algorithm approximation
-    const a0 = 2.50662823884;
-    const a1 = -18.61500062529;
-    const a2 = 41.39119773534;
-    const a3 = -25.44106049637;
-    const b1 = -8.47351093090;
-    const b2 = 23.08336743743;
-    const b3 = -21.06224101826;
-    const b4 = 3.13082909833;
-    const c0 = -2.78718931138;
-    const c1 = -2.29796479134;
-    const c2 = 4.85014127135;
-    const c3 = 2.32121276858;
-    const d1 = 3.54388924762;
-    const d2 = 1.63706781897;
-
-    if (p < 0.5) {
-      const q = Math.sqrt(-2 * Math.log(p));
-      return (((c3 * q + c2) * q + c1) * q + c0) / ((d2 * q + d1) * q + 1);
-    } else {
-      const q = Math.sqrt(-2 * Math.log(1 - p));
-      return -(((c3 * q + c2) * q + c1) * q + c0) / ((d2 * q + d1) * q + 1);
-    }
-  };
 
   const getZValue = (confidenceLevel: number): number => {
     const zTable: { [key: number]: number } = {

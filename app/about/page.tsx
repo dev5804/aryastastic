@@ -213,14 +213,14 @@ export default function AboutPage() {
               <div className="space-y-4 lg:space-y-6">
                 <div className="bg-white p-4 lg:p-6 rounded-2xl shadow-sm border border-slate-100">
                   <h4 className="text-base lg:text-lg font-medium text-slate-800 mb-2">Book Author</h4>
-                  <p className="text-slate-600 font-light text-sm lg:text-base">"Clinical Statistics: Basic Fundamentals"</p>
+                  <p className="text-slate-600 font-light text-sm lg:text-base">&quot;Clinical Statistics: Basic Fundamentals&quot;</p>
                 </div>
                 
                 <div className="bg-white p-4 lg:p-6 rounded-2xl shadow-sm border border-slate-100">
                   <h4 className="text-base lg:text-lg font-medium text-slate-800 mb-2">Chapter Contributions</h4>
                   <ul className="text-slate-600 font-light space-y-1 text-sm lg:text-base">
-                    <li>• "Nursing Research in 21st Century" (2 chapters)</li>
-                    <li>• "Text Book of Public Health and Community Medicine"</li>
+                    <li>• &quot;Nursing Research in 21st Century&quot; (2 chapters)</li>
+                    <li>• &quot;Text Book of Public Health and Community Medicine&quot;</li>
                   </ul>
                 </div>
                 
