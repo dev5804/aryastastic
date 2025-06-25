@@ -156,7 +156,7 @@ export default function AboutPage() {
                   <h3 className="text-base lg:text-lg font-medium text-slate-800">Software Development</h3>
                 </div>
                 <p className="text-slate-600 font-light leading-relaxed text-sm lg:text-base">
-                  Developed specialized software for clinical research methodology training and sample size calculations, widely used across Maharashtra's teaching institutes.
+                  Developed specialized software for clinical research methodology training and sample size calculations, widely used across Maharashtra&apos;s teaching institutes.
                 </p>
               </div>
             </div>
