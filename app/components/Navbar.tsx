@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import Link from 'next/link';
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -11,9 +12,9 @@ export default function Navbar() {
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <a href="/" className="text-xl font-medium text-slate-800 tracking-wider uppercase">
+            <Link href="/" className="text-xl font-medium text-slate-800 tracking-wider uppercase">
               Arya Statistics
-            </a>
+            </Link>
           </div>
 
           {/* Desktop Navigation */}

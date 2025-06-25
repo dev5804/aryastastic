@@ -107,7 +107,7 @@ export default function CalculatorPage() {
         interpretation: `For a ${confidenceLevel}% confidence interval with margin of error ${marginError} and standard deviation ${stdDev}, you need a sample size of ${n}.`,
         calculations: calculations
       });
-    } catch (error) {
+    } catch {
       setResults({
         sampleSize: null,
         power: null,
@@ -163,7 +163,7 @@ export default function CalculatorPage() {
         interpretation: `For a ${confidenceLevel}% confidence interval with finite population correction (N=${populationSize}), margin of error ${marginError}, and standard deviation ${stdDev}, you need a sample size of ${n}.`,
         calculations: calculations
       });
-    } catch (error) {
+    } catch {
       setResults({
         sampleSize: null,
         power: null,
@@ -216,7 +216,7 @@ export default function CalculatorPage() {
         interpretation: `For a two-tailed test with α=${alpha}, power=${power}, effect size=${effectSize}, and standard deviation=${stdDev}, you need a sample size of ${n} per group.`,
         calculations: calculations
       });
-    } catch (error) {
+    } catch {
       setResults({
         sampleSize: null,
         power: null,
@@ -269,7 +269,7 @@ export default function CalculatorPage() {
         interpretation: `For a one-tailed test with α=${alpha}, power=${power}, effect size=${effectSize}, and standard deviation=${stdDev}, you need a sample size of ${n} per group.`,
         calculations: calculations
       });
-    } catch (error) {
+    } catch {
       setResults({
         sampleSize: null,
         power: null,

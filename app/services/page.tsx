@@ -238,7 +238,7 @@ export default function ServicesPage() {
             Ready to Begin?
           </h2>
           <p className="text-base lg:text-lg text-slate-600 mb-12 font-light">
-            Let's discuss your research project and how we can help you achieve your academic goals
+            Let&apos;s discuss your research project and how we can help you achieve your academic goals
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <button className="px-8 py-3 bg-teal-600 text-white rounded-lg font-medium hover:bg-teal-700 transition-all duration-300">
