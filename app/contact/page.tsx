@@ -2,8 +2,17 @@
 
 import { useState } from 'react';
 
+interface FormData {
+  name: string;
+  email: string;
+  mobile: string;
+  areaOfResearch: string;
+  occupation: string;
+  message: string;
+}
+
 export default function ContactPage() {
-  const [formData, setFormData] = useState({
+  const [formData, setFormData] = useState<FormData>({
     name: '',
     email: '',
     mobile: '',
