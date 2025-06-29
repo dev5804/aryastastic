@@ -2,7 +2,6 @@
 import {
   getZValue,
   getZValueOneTailed,
-  getZValueOneTailedAlpha,
   CalculatorResult
 } from './utils';
 

@@ -1,7 +1,6 @@
 'use client';
 
 import { useState, useRef } from 'react';
-import * as calculators from '../lib/calculators';
 
 export default function CalculatorPage() {
   const [activeTab, setActiveTab] = useState('single-mean-ci');
@@ -407,7 +406,6 @@ export default function CalculatorPage() {
   // Calculate Difference in Means (Independent) - CI with Finite Correction
   const calculateDiffMeansCIFinite = (confidenceLevel: number, stdDev1: number, stdDev2: number, marginError: number, populationSize1: number, populationSize2: number) => {
     try {
-      const alpha = (100 - confidenceLevel) / 100;
       const z = getZValue(confidenceLevel);
       const pooledVariance = stdDev1 * stdDev1 + stdDev2 * stdDev2;
       const n0 = (2 * z * z * pooledVariance) / (marginError * marginError);
@@ -803,7 +801,6 @@ export default function CalculatorPage() {
   // Calculate Single Proportion - CI (Absolute, No Finite)
   const calculateSinglePropCI = (confidenceLevel: number, expectedProportion: number, marginError: number) => {
     try {
-      const alpha = (100 - confidenceLevel) / 100;
       const z = getZValue(confidenceLevel);
       const p = expectedProportion;
       const nExact = (z * z * p * (1 - p)) / (marginError * marginError);
@@ -848,7 +845,6 @@ export default function CalculatorPage() {
   // Calculate Single Proportion - CI (Absolute, With Finite)
   const calculateSinglePropCIFinite = (confidenceLevel: number, expectedProportion: number, marginError: number, populationSize: number) => {
     try {
-      const alpha = (100 - confidenceLevel) / 100;
       const z = getZValue(confidenceLevel);
       const p = expectedProportion;
       const n0 = (z * z * p * (1 - p)) / (marginError * marginError);
@@ -897,7 +893,6 @@ export default function CalculatorPage() {
   // Calculate Single Proportion - CI (Relative, No Finite)
   const calculateSinglePropCIRel = (confidenceLevel: number, expectedProportion: number, relativeMarginError: number) => {
     try {
-      const alpha = (100 - confidenceLevel) / 100;
       const z = getZValue(confidenceLevel);
       const p = expectedProportion;
       const absoluteMargin = relativeMarginError * p; // Convert relative to absolute
@@ -943,7 +938,6 @@ export default function CalculatorPage() {
   // Calculate Single Proportion - CI (Relative, With Finite)
   const calculateSinglePropCIRelFinite = (confidenceLevel: number, expectedProportion: number, relativeMarginError: number, populationSize: number) => {
     try {
-      const alpha = (100 - confidenceLevel) / 100;
       const z = getZValue(confidenceLevel);
       const p = expectedProportion;
       const absoluteMargin = relativeMarginError * p;
@@ -1088,7 +1082,6 @@ export default function CalculatorPage() {
   // Calculate Difference in Proportions (Independent) - CI
   const calculateDiffPropCI = (confidenceLevel: number, p1: number, p2: number, marginError: number) => {
     try {
-      const alpha = (100 - confidenceLevel) / 100;
       const z = getZValue(confidenceLevel);
       const pooledVariance = p1 * (1 - p1) + p2 * (1 - p2);
       const nExact = (2 * z * z * pooledVariance) / (marginError * marginError);
