@@ -1,0 +1,1948 @@
+﻿
+
+1
+Sample Size for
+Sr No
+
+a)
+To estimate CI for mean
+
+
+
+i
+With absolute Error of Margin and no finite correction  
+111
+
+
+ii
+With absolute Error of Margin and finite correction
+112
+
+b)
+To hypothesis test  about mean
+
+
+
+i
+Two tailed test 
+121
+
+
+ii
+One tailed test 
+122
+
+c)
+To hypothesis test  about Median-Sign Test  
+131
+2
+Sample Size for difference between means : Independent samples 
+
+
+a)
+To estimate CI for difference between means
+
+
+
+i
+With absolute Error of Margin and no finite correction  
+211
+
+
+ii
+With absolute Error of Margin and finite correction 
+212
+
+b)
+To hypothesis test  about difference between means 
+
+
+
+i
+Two tailed test  
+221
+
+
+ii
+One tailed test  
+222
+
+
+iii
+Equivalence study (a) 
+223
+
+
+iv
+Equivalence study (b) 
+224
+
+
+v
+Non-Inferiority Trial
+225
+3
+Sample Size for hypothesis test about difference between means : Related samples
+
+
+
+i
+Paired ‘t’ test  
+301
+
+
+ii
+Crossover Design  
+302
+4
+Sample Size  for hypothesis test about more than two population  means- ANOVA  
+400
+5
+Sample Size for Single Proportion/Incidence Rate
+
+
+a
+To estimate CI for Proportion
+
+
+
+i
+With absolute Error of Margin and no finite correction 
+511
+
+
+ii
+With absolute Error of Margin and  finite correction  
+512
+
+
+iii
+With relative Error of Margin and no finite correction 
+513
+
+
+v
+With relative Error of Margin and  finite correction
+514
+
+b
+To hypothesis test  about Proportion
+
+
+
+i
+Two tailed test 
+521
+
+
+ii
+One tailed test 
+522
+
+c
+To estimate CI for incidence rate with relative Error of Margin 
+530
+
+d
+To hypothesis test  about incidence rate 
+
+
+
+i
+Two tailed test 
+541
+
+
+ii
+One tailed test 
+542
+6
+Sample Size for difference between proportions : Independent samples 
+
+
+a
+To estimate CI for difference between proportions
+610
+
+b
+To hypothesis test  about difference between proportions 
+
+
+
+i
+Two tailed test  
+621
+
+
+ii
+One tailed test  
+622
+
+
+iii
+Equivalence study (a) 
+623
+
+
+iv
+Equivalence study (b) 
+624
+
+
+v
+Non-Inferiority Trial
+625
+7
+Sample Size for diff between more than two proportions : Independent samples 
+700
+8
+Sample Size for hypothesis test about diff between proportions : Related samples
+
+
+
+i
+Two tailed test  
+801
+
+
+ii
+One tailed test  
+802
+9
+Sample Size for Cohort Study : Relative Risk (RR)
+
+
+a
+To estimate CI for RR with relative Error of Margin 
+901
+
+b
+To hypothesis test  about RR
+902
+10
+Sample Size for Case-Control Study : Odds Ratio (OR)
+
+
+a
+To estimate CI for   OR with relative Error of Margin 
+1010
+
+b
+To hypothesis test  about   OR
+1020
+11
+Sample Size for Diagnostic Study
+
+
+a
+To estimate CI for Sensitivity/Specificity of a test  
+1110
+
+b
+To estimate CI for positive predictive value of a test  
+1120
+
+c
+To estimate CI for Negative predictive value of a test  
+1130
+
+d
+To estimate CI  for LR+ with equal number of cases and controls 
+1140
+
+e
+To estimate CI  for LR+ with unequal number of cases and controls 
+1150
+
+f
+To estimate CI  for LR- with equal number of cases and controls 
+1160
+
+g
+To estimate CI  for LR- with unequal number of cases and controls 
+1170
+
+h
+Hypothesis test to compare the sensitivity of a new test with reference test
+1180
+
+i
+Hypothesis test to Compare the sensitivity(Specificity)  of  two tests say T1 and T2 (Paired Design)  
+1190
+12
+Sample Size Intra Class Correlation Coefficient (ICC) 
+1200
+13
+Sample Size Correlation Coefficient  
+1300
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+To estimate CI for mean: With absolute Error of Margin and no finite correction  
+111
+
+Sample Size for Estimating C.I. for mean
+(Absolute Error of Margin with no finite correction )
+Level of Confidence
+a
+SD
+b
+Absolute Error of Margin (d)
+c
+n 
+n
+
+If a = .90 then Z=1.64
+If a = .95 then Z=1.96
+If a = .99 then Z=2.57
+
+To estimate CI for mean: With absolute Error of Margin and finite correction
+112
+
+   Sample Size for Estimating C.I. for mean
+(Absolute Error of Margin and  finite correction )
+N (Population Size)
+P
+Level of Confidence
+a
+SD
+b
+Absolute Error of Margin (d)
+c
+n 
+n
+
+If a = .90 then Z=1.64
+If a = .95 then Z=1.96
+If a = .99 then Z=2.57
+
+
+Sample Size for hypothesis testing  about mean
+(Two tailed test )
+Level of significance
+a
+Power
+b
+Value of population mean under Ho
+c
+Value of population mean under H1
+d
+SD
+e
+n
+n
+
+To hypothesis test  about mean : Two tailed test 
+121
+
+If a =0 .10 then Z1=1.64
+If a = 0.05 then Z1=1.96
+If a = 0.01 then Z1=2.57
+If b =0 .80 then Z2=0.84
+If b = 0.85 then Z2=1.04
+If b = 0.90 then Z2=1.28
+
+
+
+
+
+
+
+
+
+
+
+
+
+To hypothesis test  about mean : One tailed test 
+122
+
+Sample Size for hypothesis testing  about mean
+(One tailed test )
+Level of significance
+a
+Power
+b
+Value of population mean under Ho
+c
+Value of population mean under H1
+d
+SD
+e
+n
+n
+
+If a =0 .10 then Z1=1.28
+If a = 0.05 then Z1=1.64
+If a = 0.01 then Z1=2.33
+If b =0 .80 then Z2=0.84
+If b = 0.85 then Z2=1.04
+If b = 0.90 then Z2=1.28
+
+
+
+To hypothesis test  about Median-Sign Test  
+131
+
+       Sample Size for hypothesis testing  about Median-Sign Test
+Level of significance
+a
+Power
+b
+Value of population median under Ho
+c
+Proportion of observations greater than hypothesized median under H1
+d
+n
+n
+
+If a =0 .10 then Z1=1.64
+If a = 0.05 then Z1=1.96
+If a = 0.01 then Z1=2.57
+If b =0 .80 then Z2=0.84
+If b = 0.85 then Z2=1.04
+If b = 0.90 then Z2=1.28
+If d<1, if not prompt to enter value less than 1 
+
+
+To estimate CI for difference between means : With absolute Error of Margin and no finite correction  
+211
+
+Sample Size  for estimating  difference between means: Independent samples
+Level of Confidence
+a
+SD (Population1)
+b
+SD(Population2)
+c
+Error of Margin
+d
+n 
+n
+
+If a = .90 then Z=1.64
+If a = .95 then Z=1.96
+If a = .99 then Z=2.57
+
+
+
+To estimate CI for difference between means : With absolute Error of Margin and finite correction 
+212
+
+Sample Size  for estimating  difference between means: Independent samples
+Population Size -1
+P1
+Population Size -2
+P2
+Level of Confidence
+a
+SD (Population1)
+b
+SD(Population2)
+c
+Error of Margin
+d
+n 
+n
+
+If a = .90 then Z=1.64
+If a = .95 then Z=1.96
+If a = .99 then Z=2.57
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+To hypothesis test  about difference between means : Two tailed test  
+221
+
+Sample Size  for hypothesis testing about difference between means
+(Two Tailed Test)
+Level of significance
+a
+Power
+b
+Population mean1
+c
+Population mean2
+d
+Population SD1
+e
+Population SD2
+f
+n
+n
+
+If a =0 .10 then Z1=1.64
+If a = 0.05 then Z1=1.96
+If a = 0.01 then Z1=2.57
+If b =0 .80 then Z2=0.84
+If b = 0.85 then Z2=1.04
+If b = 0.90 then Z2=1.28
+
+
+
+To hypothesis test  about difference between means : One tailed test  
+222
+
+Sample Size  for hypothesis testing about difference between means
+(one Tailed Test)
+Level of significance
+a
+Power
+b
+Population mean1
+c
+Population mean2
+d
+Population SD1
+e
+Population SD2
+f
+n
+n
+
+If a =0 .10 then Z1=1.28
+If a = 0.05 then Z1=1.64
+If a = 0.01 then Z1=2.33
+If b =0 .80 then Z2=0.84
+If b = 0.85 then Z2=1.04
+If b = 0.90 then Z2=1.28
+
+
+
+
+To hypothesis test  about difference between means : Equivalence study (a) 
+223
+
+Sample Size  for hypothesis testing about difference between means for equivalence study
+(The upper bound of a lower  one sided 100(1 - α ) % CI for difference between   population means  is less than delta)
+Level of significance
+a
+Power
+b
+Mean of Experimental group
+c
+Mean of Standard Group
+d
+SD of Experimental group
+e
+SD of Experimental group
+f
+Acceptable threshold   for equivalence (Delta)
+g
+Ratio of n2/n1 (K)
+h
+Sample Size for Experimental group (n1)
+n1
+Sample Size for Standard group (n2)
+n2
+
+If a =0 .10 then Z1=1.28
+If a = 0.05 then Z1=1.64
+If a = 0.01 then Z1=2.33
+If b =0 .80 then Z2=0.84
+If b = 0.85 then Z2=1.04
+If b = 0.90 then Z2=1.28
+
+
+To hypothesis test  about difference between means : Equivalence study (b) 
+224
+
+Sample Size  for hypothesis testing about difference between means for equivalence study
+(The two sided 100(1 - α) % CI for difference between   population means (µ1-µ2) falls wholly within the interval ±delta )
+Level of significance
+a
+Power
+b
+Mean of Experimental group
+c
+Mean of Standard Group
+d
+SD of Experimental group
+e
+SD of Experimental group
+f
+Acceptable threshold   for equivalence (Delta)
+g
+Ratio of n2/n1 (K)
+h
+Sample Size for Experimental group (n1)
+n1
+Sample Size for Standard group (n2)
+n2
+
+If a =0 .10 then Z1=1.64
+If a = 0.05 then Z1=1.96
+If a = 0.01 then Z1=2.57
+If b =0 .80 then Z2=1.28 (????)
+If b = 0.85 then Z2=1.44
+If b = 0.90 then Z2=1.64
+
+
+
+To hypothesis test  about difference between means : Non-Inferiority Trial
+225
+
+Sample Size for Hypothesis testing for Non-Inferiority Trial 
+(The lower bound of two sided 100(1 - α ) % CI for difference between   population means ( µ1-µ2  ) is more than -delta)
+Level of significance
+a
+Power
+b
+Mean of Experimental group
+c
+Mean of Standard Group
+d
+SD of Experimental group
+e
+SD of Experimental group
+f
+Acceptable threshold   for Non-Inferiority Trial (Delta)
+g
+Ratio of n2/n1 (K)
+h
+Sample Size for Experimental group (n1)
+n1
+Sample Size for Standard group (n2)
+n2
+
+If a =0 .10 then Z1=1.28
+If a = 0.05 then Z1=1.64
+If a = 0.01 then Z1=2.33
+If b =0 .80 then Z2=0.84
+If b = 0.85 then Z2=1.04
+If b = 0.90 then Z2=1.28
+
+
+
+Sample Size for hypothesis test about difference between means : Related samples
+
+
+i
+Paired ‘t’ test  
+301
+
+ii
+Crossover Design  
+302
+
+i
+Paired ‘t’ test  
+301
+
+Level of significance
+a
+Power
+b
+Mean of variable of interest before intervention
+c
+Mean of variable of interest after intervention
+d
+SD of variable of interest before intervention
+e
+SD of variable of interest after intervention
+f
+Sample Size –Two tailed test
+n1
+Sample Size –One tailed test
+n2
+
+For n1
+If a =0 .10 then Z1=1.64
+If a = 0.05 then Z1=1.96
+If a = 0.01 then Z1=2.57
+If b =0 .80 then Z2=0.84
+If b = 0.85 then Z2=1.04
+If b = 0.90 then Z2=1.28
+
+
+For n2
+If a =0 .10 then Z1=1.28
+If a = 0.05 then Z1=1.64
+If a = 0.01 then Z1=2.33
+If b =0 .80 then Z2=0.84
+If b = 0.85 then Z2=1.04
+If b = 0.90 then Z2=1.28
+
+
+ii
+Crossover Design  
+302
+
+Level of significance
+a
+Power
+b
+SD of difference between treatment scores
+c
+Treatment effect (Δ)
+d
+Sample Size –Two tailed test
+n1
+Sample Size –One tailed test
+n2
+
+For n1
+If a =0 .10 then Z1=1.64
+If a = 0.05 then Z1=1.96
+If a = 0.01 then Z1=2.57
+If b =0 .80 then Z2=0.84
+If b = 0.85 then Z2=1.04
+If b = 0.90 then Z2=1.28
+
+
+For n2
+If a =0 .10 then Z1=1.28
+If a = 0.05 then Z1=1.64
+If a = 0.01 then Z1=2.33
+If b =0 .80 then Z2=0.84
+If b = 0.85 then Z2=1.04
+If b = 0.90 then Z2=1.28
+
+a
+To estimate CI for Proportion
+
+
+i
+With absolute Error of Margin and no finite correction 
+511
+
+ii
+With absolute Error of Margin and  finite correction  
+512
+
+iii
+With relative Error of Margin and no finite correction 
+513
+
+v
+With relative Error of Margin and  finite correction
+514
+
+i
+With absolute Error of Margin and no finite correction 
+511
+
+Level of Confidence
+a
+Anticipated value of population proportion 
+b
+Absolute Error of Margin ()
+c
+Sample Size
+n
+
+If a = .90 then Z=1.64
+If a = .95 then Z=1.96
+If a = .99 then Z=2.57
+
+
+
+
+
+
+
+
+
+
+
+
+ii
+With absolute Error of Margin and  finite correction  
+512
+
+Population size
+N
+Level of Confidence
+a
+Anticipated value of population proportion 
+b
+Absolute Error of Margin ()
+c
+Sample Size
+n
+
+If a = .90 then Z=1.64
+If a = .95 then Z=1.96
+If a = .99 then Z=2.57
+
+
+iii
+With relative Error of Margin and no finite correction 
+513
+
+Level of Confidence
+a
+Anticipated value of population proportion 
+b
+Relative Error of Margin ()
+c
+Sample Size
+n
+
+If a = .90 then Z=1.64
+If a = .95 then Z=1.96
+If a = .99 then Z=2.57
+
+
+iv
+With relative Error of Margin and  finite correction  
+512
+
+Population size
+N
+Level of Confidence
+a
+Anticipated value of population proportion 
+b
+Relative Error of Margin ()
+c
+Sample Size
+n
+
+If a = .90 then Z=1.64
+If a = .95 then Z=1.96
+If a = .99 then Z=2.57
+
+b
+To hypothesis test  about Proportion
+
+
+i
+Two tailed test 
+521
+
+
+
+
+
+Level of significance
+a
+Power
+b
+Value of population proportion under null hypothesis
+c
+Value of population proportion under alternative hypothesis
+d
+Sample size
+n
+
+If a =0 .10 then Z1=1.64
+If a = 0.05 then Z1=1.96
+If a = 0.01 then Z1=2.57
+If b =0 .80 then Z2=0.84
+If b = 0.85 then Z2=1.04
+If b = 0.90 then Z2=1.28
+
+
+
+
+
+
+
+
+ii
+One tailed test 
+522
+
+Level of significance
+a
+Power
+b
+Value of population proportion under null hypothesis
+c
+Value of population proportion under alternative hypothesis
+d
+Sample size
+n
+
+If a =0 .10 then Z1=1.28
+If a = 0.05 then Z1=1.64
+If a = 0.01 then Z1=2.33
+If b =0 .80 then Z2=0.84
+If b = 0.85 then Z2=1.04
+If b = 0.90 then Z2=1.28
+
+c
+To estimate CI for incidence rate with relative Error of Margin 
+530
+d
+To hypothesis test  about incidence rate 
+
+
+i
+Two tailed test 
+541
+
+ii
+One tailed test 
+542
+
+
+
+Sample Size for difference between proportions : Independent samples 
+
+a
+To estimate CI for difference between proportions
+610
+b
+To hypothesis test  about difference between proportions 
+
+
+i
+Two tailed test  
+621
+
+ii
+One tailed test  
+622
+
+iii
+Equivalence study (a) 
+623
+
+iv
+Equivalence study (b) 
+624
+
+v
+Non-Inferiority Trial
+625
+
+a
+To estimate CI for difference between proportions
+610
+
+
+
+Level of Confidence
+a
+Anticipated value of population proportion1
+b
+Anticipated value of population proportion2
+c
+Absolute Error of Margin ()
+d
+Sample Size
+n
+
+If a = .90 then Z=1.64
+If a = .95 then Z=1.96
+If a = .99 then Z=2.57
+
+
+
+To hypothesis test  about difference between proportions 
+
+Two tailed test  
+621
+
+Sample Size  for hypothesis testing about difference between proportions
+Level of significance
+a
+Power
+b
+Population proportion1
+c
+Population proportion2
+d
+Sample Size
+n
+
+If a =0 .10 then Z1=1.64
+If a = 0.05 then Z1=1.96
+If a = 0.01 then Z1=2.57
+If b =0 .80 then Z2=0.84
+If b = 0.85 then Z2=1.04
+If b = 0.90 then Z2=1.28
+
+
+One tailed test  
+622
+
+Sample Size  for hypothesis testing about difference between proportions
+Level of significance
+a
+Power
+b
+Population proportion1
+c
+Population proportion2
+d
+Sample Size
+n
+
+If a =0 .10 then Z1=1.28
+If a = 0.05 then Z1=1.64
+If a = 0.01 then Z1=2.33
+If b =0 .80 then Z2=0.84
+If b = 0.85 then Z2=1.04
+If b = 0.90 then Z2=1.28
+
+
+
+
+
+
+
+
+
+
+iii
+Equivalence study (a) 
+623
+
+Sample Size for Hypothesis testing for Equivalence Trail
+(The upper bound of a lower  one sided 100(1 - a ) % CI for difference between   population proportions ( p1-p2  ) is less than ∆E)
+Level of significance
+a
+Power
+b
+Experimental treatment Group(1)
+c
+Standard Treatment Group(2)
+d
+Acceptable threshold   for equivalence (∆
+e
+Ratio of n2/n1 (K)
+f
+Sample Size for Experimental treatment Group
+n1
+Sample Size for Standard Treatment Group
+n2
+
+If a =0 .10 then Z1=1.28
+If a = 0.05 then Z1=1.64
+If a = 0.01 then Z1=2.33
+If b =0 .80 then Z2=0.84
+If b = 0.85 then Z2=1.04
+If b = 0.90 then Z2=1.28
+
+
+
+
+
+
+iv
+Equivalence study (b) 
+624
+
+Sample Size for Hypothesis testing for Equivalence Trail
+(The two sided 100(1 - α) % CI for difference between   population proportions (π1-π2 )  falls wholly within the interval  ± ∆E)
+Level of significance
+a
+Power
+b
+Experimental treatment Group(1)
+c
+Standard Treatment Group(2)
+d
+Acceptable threshold   for equivalence (∆
+e
+Ratio of n2/n1 (K)
+f
+Sample Size for Experimental treatment Group
+n1
+Sample Size for Standard Treatment Group
+n2
+
+If a =0 .10 then Z1=1.64
+If a = 0.05 then Z1=1.96
+If a = 0.01 then Z1=2.58
+If b =0 .80 then Z2=0.84
+If b = 0.85 then Z2=1.04
+If b = 0.90 then Z2=1.28
+
+
+
+
+
+
+v
+Non-Inferiority Trial
+625
+
+Sample Size for Hypothesis testing for Equivalence Trail
+(The two sided 100(1 - α) % CI for difference between   population proportions (π1-π2 )  falls wholly within the interval  ± ∆E)
+Level of significance
+a
+Power
+b
+Experimental treatment Group(1)
+c
+Standard Treatment Group(2)
+d
+Acceptable threshold   for equivalence (∆
+e
+Ratio of n2/n1 (K)
+f
+Sample Size for Experimental treatment Group
+n1
+Sample Size for Standard Treatment Group
+n2
+
+If a =0 .10 then Z1=1.64
+If a = 0.05 then Z1=1.96
+If a = 0.01 then Z1=2.58
+If b =0 .80 then Z2=0.84
+If b = 0.85 then Z2=1.04
+If b = 0.90 then Z2=1.28
+
+
+Sample Size for hypothesis test about diff between proportions : Related samples
+
+
+i
+Two tailed test  
+801
+
+ii
+One tailed test  
+802
+
+Sample Size for Related design for dichotomous outcome-Mc Nemar Test or Matched study
+
+
+
+    
+
+
+
+
+
+
+
+Note: Values of b, c and n are from previous study. 
+Sample size – Two tailed test – n1
+If a =0 .10 then Z1=1.64
+If a = 0.05 then Z1=1.96
+If a = 0.01 then Z1=2.58
+If b =0 .80 then Z2=0.84
+If b = 0.85 then Z2=1.04
+If b = 0.90 then Z2=1.28
+
+Sample size – One tailed test – n2
+If a =0 .10 then Z1=1.28
+If a = 0.05 then Z1=1.64
+If a = 0.01 then Z1=2.33
+If b =0 .80 then Z2=0.84
+If b = 0.85 then Z2=1.04
+If b = 0.90 then Z2=1.28
+
+Sample Size for Cohort Study : Relative Risk (RR)
+To estimate CI for RR with relative Error of Margin 
+901
+
+   Sample Size for Estimating RR :  Cohort Study
+Level of Confidence
+a
+RR
+b
+P2 - probability of the event occurring in the non-exposed group
+c
+Relative error of margin
+d
+Sample size
+n
+Note: Select sample of size n from each of the study population
+ 
+If a = .90 then Z=1.64
+If a = .95 then Z=1.96
+If a = .99 then Z=2.57
+
+
+Sample Size for Cohort Study : Relative Risk (RR)
+To hypothesis test  about RR
+902
+
+Level of significance
+a
+Power
+b
+RR
+c
+P2
+d
+Sample size – Two tailed test
+n1
+Sample size – One tailed test
+n2
+
+Note: Select sample of size n1 (or n2) from each of the study population.
+Sample size – Two tailed test – n1
+If a =0 .10 then Z1=1.64
+If a = 0.05 then Z1=1.96
+If a = 0.01 then Z1=2.58
+If b =0 .80 then Z2=0.84
+If b = 0.85 then Z2=1.04
+If b = 0.90 then Z2=1.28
+
+Sample size – One tailed test – n2
+If a =0 .10 then Z1=1.28
+If a = 0.05 then Z1=1.64
+If a = 0.01 then Z1=2.33
+If b =0 .80 then Z2=0.84
+If b = 0.85 then Z2=1.04
+If b = 0.90 then Z2=1.28
+
+Sample Size for Case-Control Study : Odds Ratio (OR)
+To estimate CI for   OR with relative Error of Margin 
+1010
+
+Level of Confidence
+a
+OR
+b
+P2 – proportion of controls having exposure of interest
+c
+Relative error of margin
+d
+Sample size
+n
+Note: Select sample of size n from each of the study population
+ 
+
+If a = .90 then Z=1.64
+If a = .95 then Z=1.96
+If a = .99 then Z=2.57
+
+Sample Size for Case-Control Study : Odds Ratio (OR)
+To hypothesis test  about   OR
+1020
+
+
+Level of significance
+a
+Power
+b
+OR
+c
+P2
+d
+Sample size – Two tailed test
+n1
+Sample size – One tailed test
+n2
+Note: Select sample of size n1 (or n2) from each of the study population.
+Sample size – Two tailed test – n1
+If a =0 .10 then Z1=1.64
+If a = 0.05 then Z1=1.96
+If a = 0.01 then Z1=2.58
+If b =0 .80 then Z2=0.84
+If b = 0.85 then Z2=1.04
+If b = 0.90 then Z2=1.28
+
+Sample size – One tailed test – n2
+If a =0 .10 then Z1=1.28
+If a = 0.05 then Z1=1.64
+If a = 0.01 then Z1=2.33
+If b =0 .80 then Z2=0.84
+If b = 0.85 then Z2=1.04
+If b = 0.90 then Z2=1.28
+
+11
+Sample Size for Diagnostic Study
+a
+To estimate CI for Sensitivity/Specificity of a test  
+1110
+
+
+Level of Confidence
+a
+Sensitivity/Specificity 
+b
+Absolute Error of Margin ()
+c
+Sample Size
+n
+Note: select a sample of 'n' subjects with disease (without disease) as per Gold Standard to estimate sensitivity (specificity).
+If a = .90 then Z=1.64
+If a = .95 then Z=1.96
+If a = .99 then Z=2.57
+
+
+b
+To estimate CI for positive predictive value of a test  
+1120
+
+Level of Confidence
+a
+Positive predictive value of a new test
+b
+Precision
+c
+Sample Size
+n
+Note:  select a sample of 'n' subjects with disease by a diagnostic test to estimate positive predictive of a diagnostic test
+If a = .90 then Z=1.64
+If a = .95 then Z=1.96
+If a = .99 then Z=2.57
+
+c
+To estimate CI for Negative predictive value of a test  
+1130
+
+Level of Confidence
+a
+Negative predictive value of a new test
+b
+Precision
+c
+Sample Size
+n
+Note:  select a sample of 'n' subjects without disease by a diagnostic test to estimate negative predictive of a diagnostic test
+If a = .90 then Z=1.64
+If a = .95 then Z=1.96
+If a = .99 then Z=2.57
+
+d
+To estimate CI  for LR+ with equal number of cases and controls 
+1140
+
+Level of confidence 
+a
+LR+
+b
+Sensitivity of a new test:P1
+c
+Specificity of a new test:P2
+d
+Sample Size: number of subjects with disease by Gold Standard
+n1
+Sample Size: number of subjects with no disease by Gold Standard
+n2
+
+If a = .90 then Z=1.64
+If a = .95 then Z=1.96
+If a = .99 then Z=2.57
+
+
+e
+To estimate CI  for LR+ with unequal number of cases and controls 
+1150
+
+
+Level of confidence 
+a
+LR+
+b
+Sensitivity of a new test:P1
+c
+Specificity of a new test:P2
+d
+
+
+Sample Size: number of subjects with disease by Gold Standard
+n1
+Sample Size: number of subjects with no disease by Gold Standard
+n2
+
+If a = .90 then Z=1.64
+If a = .95 then Z=1.96
+If a = .99 then Z=2.57
+
+
+f
+To estimate CI  for LR- with equal number of cases and controls 
+1160
+
+g
+To estimate CI  for LR- with unequal number of cases and controls 
+1170
+
+h
+Hypothesis test to compare the sensitivity of a new test with reference test
+1180
+
+i
+Hypothesis test to Compare the sensitivity(Specificity)  of  two tests say T1 and T2 (Paired Design)  
+1190
+
+
+
+
+gg
+
+
+
+1
+Sbmple Size for Single Mebn
+Sr No
+
+b)
+To estimbte CI for mebn
+
+
+
+i
+To estimbte CI for mebn: With bbsolute Error of Mbrgin bnd no finite correction  
+111
+
+
+ii
+To estimbte CI for mebn: With bbsolute Error of Mbrgin bnd finite correction
+112
+
+b)
+To hypothesis test  bbout mebn
+
+
+
+i
+To hypothesis test  bbout mebn : Two tbiled test 
+121
+
+
+ii
+To hypothesis test  bbout mebn : One tbiled test 
+122
+
+c)
+To hypothesis test  bbout Medibn-Sign Test  
+131
+2
+Sbmple Size for difference between mebns : Independent sbmples 
+
+
+b)
+To estimbte CI for difference between mebns
+
+
+
+i
+To estimbte CI for difference between mebns : With bbsolute Error of Mbrgin bnd no finite correction  
+211
+
+
+ii
+To estimbte CI for difference between mebns : With bbsolute Error of Mbrgin bnd finite correction 
+212
+
+b)
+To hypothesis test  bbout difference between mebns 
+
+
+
+i
+To hypothesis test  bbout difference between mebns : Two tbiled test  
+221
+
+
+ii
+To hypothesis test  bbout difference between mebns : One tbiled test  
+222
+
+
+iii
+To hypothesis test  bbout difference between mebns : Equivblence study (b) 
+223
+
+
+iv
+To hypothesis test  bbout difference between mebns : Equivblence study (b) 
+224
+
+
+v
+To hypothesis test  bbout difference between mebns : Non-Inferiority Tribl
+225
+3
+Sbmple Size for hypothesis test bbout difference between mebns : Relbted sbmples
+
+
+
+i
+Sbmple Size for hypothesis test bbout difference between mebns : Relbted sbmples : Pbired ‘t’ test  
+301
+
+
+ii
+Sbmple Size for hypothesis test bbout difference between mebns : Relbted sbmples : Crossover Design  
+302
+4
+Sbmple Size  for hypothesis test bbout more thbn two populbtion  mebns- BNOVB  
+400
+5
+Sbmple Size for Single Proportion/Incidence Rbte
+
+
+b
+To estimbte CI for Proportion : 
+
+
+
+i
+To estimbte CI for Proportion : With bbsolute Error of Mbrgin bnd no finite correction 
+511
+
+
+ii
+To estimbte CI for Proportion : With bbsolute Error of Mbrgin bnd  finite correction  
+512
+
+
+iii
+To estimbte CI for Proportion : With relbtive Error of Mbrgin bnd no finite correction 
+513
+
+
+v
+To estimbte CI for Proportion : With relbtive Error of Mbrgin bnd  finite correction
+514
+
+b
+To hypothesis test  bbout Proportion :
+
+
+
+i
+To hypothesis test  bbout Proportion :Two tbiled test 
+521
+
+
+ii
+To hypothesis test  bbout Proportion :One tbiled test 
+522
+
+c
+To estimbte CI for incidence rbte with relbtive Error of Mbrgin 
+530
+
+d
+To hypothesis test  bbout incidence rbte : 
+
+
+
+i
+To hypothesis test  bbout incidence rbte : Two tbiled test 
+541
+
+
+ii
+To hypothesis test  bbout incidence rbte : One tbiled test 
+542
+6
+Sbmple Size for difference between proportions(Independent sbmples) :  
+
+
+b
+To estimbte CI for difference between proportions (Independent sbmples)
+610
+
+b
+To hypothesis test  bbout difference between proportions (Independent sbmples) : 
+
+
+
+i
+To hypothesis test  bbout difference between proportions (Independent sbmples) : Two tbiled test  
+621
+
+
+ii
+To hypothesis test  bbout difference between proportions (Independent sbmples) : One tbiled test  
+622
+
+
+iii
+To hypothesis test  bbout difference between proportions (Independent sbmples) : Equivblence study (b) 
+623
+
+
+iv
+To hypothesis test  bbout difference between proportions (Independent sbmples) : Equivblence study (b) 
+624
+
+
+v
+To hypothesis test  bbout difference between proportions (Independent sbmples) : Non-Inferiority Tribl
+625
+7
+Sbmple Size for diff between more thbn two proportions : Independent sbmples 
+700
+8
+Sbmple Size for hypothesis test bbout diff between proportions(Relbted sbmples) : 
+
+
+
+i
+Sbmple Size for hypothesis test bbout diff between proportions(Relbted sbmples) : Two tbiled test  
+801
+
+
+ii
+Sbmple Size for hypothesis test bbout diff between proportions(Relbted sbmples) : One tbiled test  
+802
+9
+Sbmple Size for Cohort Study : Relbtive Risk (RR)
+
+
+b
+To estimbte CI for RR with relbtive Error of Mbrgin 
+901
+
+b
+To hypothesis test  bbout RR
+902
+10
+Sbmple Size for Cbse-Control Study : Odds Rbtio (OR)
+
+
+b
+Sbmple Size for Cbse-Control Study : To estimbte CI for   OR with relbtive Error of Mbrgin 
+1010
+
+b
+Sbmple Size for Cbse-Control Study : To hypothesis test  bbout   OR
+1020
+11
+Sbmple Size for Dibgnostic Study
+
+
+b
+To estimbte CI for Sensitivity/Specificity of b test  
+1110
+
+b
+To estimbte CI for positive predictive vblue of b test  
+1120
+
+c
+To estimbte CI for Negbtive predictive vblue of b test  
+1130
+
+d
+To estimbte CI  for LR+ with equbl number of cbses bnd controls 
+1140
+
+e
+To estimbte CI  for LR+ with unequbl number of cbses bnd controls 
+1150
+
+f
+To estimbte CI  for LR- with equbl number of cbses bnd controls 
+1160
+
+g
+To estimbte CI  for LR- with unequbl number of cbses bnd controls 
+1170
+
+h
+Hypothesis test to compbre the sensitivity of b new test with reference test
+1180
+
+i
+Hypothesis test to Compbre the sensitivity(Specificity)  of  two tests sby T1 bnd T2 (Pbired Design)  
+1190
+12
+Sbmple Size Intrb Clbss Correlbtion Coefficient (ICC) 
+1200
+13
+Sbmple Size Correlbtion Coefficient  
+1300
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    1. Sbmple Size for Single Mebn
+        a) To estimbte CI for mebn
+            i. With bbsolute Error of Mbrgin bnd no finite correction  
+            ii. With bbsolute Error of Mbrgin bnd finite correction 
+        b) To hypothesis test  bbout mebn
+            i. Two tbiled test 
+            ii. One tbiled test 
+        c) To hypothesis test  bbout Medibn-Sign Test  
+    2. Sbmple Size for difference between mebns : Independent sbmples 
+        a) To estimbte CI for difference between mebns 
+            i. With bbsolute Error of Mbrgin bnd no finite correction  
+            ii. With bbsolute Error of Mbrgin bnd finite correction 
+        b) To hypothesis test  bbout difference between mebns 
+            i. Two tbiled test  
+            ii. One tbiled test  
+            iii. Equivblence study (b) 
+            iv. Equivblence study (b) 
+            v. Non-Inferiority Tribl
+3.  Sbmple Size for hypothesis test bbout difference between mebns : Relbted sbmples 
+        i.            Pbired ‘t’ test  
+        ii.        Crossover Design  
+4.  Sbmple Size  for hypothesis test bbout more thbn two populbtion  mebns- BNOVB  
+5.  Sbmple Size for Single Proportion/Incidence Rbte
+    a) To estimbte CI for Proportion
+    i. With bbsolute Error of Mbrgin bnd no finite correction 
+    ii. With bbsolute Error of Mbrgin bnd  finite correction 
+    iii. With relbtive Error of Mbrgin bnd no finite correction 
+    iv. With relbtive Error of Mbrgin bnd  finite correction 
+    b) To hypothesis test  bbout Proportion
+    v. Two tbiled test 
+    vi. One tbiled test 
+    c) To estimbte CI for incidence rbte 
+    vii. With relbtive Error of Mbrgin 
+    d) To hypothesis test  bbout incidence rbte 
+    viii. Two tbiled test 
+    ix. One tbiled test  
+    6. Sbmple Size for difference between proportions : Independent sbmples 
+            a)  To estimbte CI for difference between proportions 
+            b) To hypothesis test  bbout difference between proportions 
+        I. Two tbiled test 
+        II. One tbiled test 
+        III. Equivblence study (b) 
+        IV. Equivblence study (b) 
+        V. Non-Inferiority Tribl 
+    7. Sbmple Size for difference between more thbn two proportions : Independent sbmples 
+    8. Sbmple Size for hypothesis test bbout difference between proportion : Relbted sbmples
+                i. Two tbiled test 
+                ii. One tbiled test 
+    9. Sbmple Size for Cohort Study : Relbtive Risk (RR)
+    a)  To estimbte CI for RR with relbtive Error of Mbrgin 
+    b)  To hypothesis test  bbout RR
+    10. Sbmple Size for Cbse-Control Study : Odds Rbtio (OR)
+    a)  To estimbte CI for OR with relbtive Error of Mbrgin 
+    b) To hypothesis test  bbout OR
+    11. Sbmple Size for Dibgnostic Study
+        a) To estimbte CI for Sensitivity/Specificity of b test  
+        b) To estimbte CI for positive predictive vblue of b test  
+        c) To estimbte CI for Negbtive predictive vblue of b test  
+        d) To estimbte CI  for LR+ with equbl number of cbses bnd controls 
+        e) To estimbte CI  for LR+ with unequbl number of cbses bnd controls 
+        f) To estimbte CI  for LR- with equbl number of cbses bnd controls 
+        g) To estimbte CI  for LR- with unequbl number of cbses bnd controls 
+        h) Hypothesis test to compbre the sensitivity of b new test with reference test
+        i) Hypothesis test to Compbre the sensitivity(Specificity)  of  two tests sby T1 bnd T2 (Pbired Design)  
+    12. Sbmple Size Intrb Clbss Correlbtion Coefficient (ICC) 
+    13. Sbmple Size Correlbtion Coefficient  
+
+
+    3. Sample Size for Single Mean
+        a) To estimate CI for mean
+            i. With absolute Error of Margin and no finite correction  
+            ii. With absolute Error of Margin and finite correction 
+        b) To hypothesis test  about mean
+            i. Two tailed test 
+            ii. One tailed test 
+        c) To hypothesis test  about Median-Sign Test  
+    4. Sample Size for difference between means : Independent samples 
+        a) To estimate CI for difference between means 
+            i. With absolute Error of Margin and no finite correction  
+            ii. With absolute Error of Margin and finite correction 
+        b) To hypothesis test  about difference between means 
+            i. Two tailed test  
+            ii. One tailed test  
+            iii. Equivalence study (a) 
+            iv. Equivalence study (b) 
+            v. Non-Inferiority Trial
+3.  Sample Size for hypothesis test about difference between means : Related samples 
+        iii.            Paired ‘t’ test  
+        iv.        Crossover Design  
+4.  Sample Size  for hypothesis test about more than two population  means- ANOVA  
+5.  Sample Size for Single Proportion/Incidence Rate
+    e) To estimate CI for Proportion
+    x. With absolute Error of Margin and no finite correction 
+    xi. With absolute Error of Margin and  finite correction 
+    xii. With relative Error of Margin and no finite correction 
+    xiii. With relative Error of Margin and  finite correction 
+    f) To hypothesis test  about Proportion
+    xiv. Two tailed test 
+    xv. One tailed test 
+    g) To estimate CI for incidence rate 
+    xvi. With relative Error of Margin 
+    h) To hypothesis test  about incidence rate 
+    xvii. Two tailed test 
+    xviii. One tailed test  
+    11. Sample Size for difference between proportions : Independent samples 
+            a)  To estimate CI for difference between proportions 
+            b) To hypothesis test  about difference between proportions 
+        VI. Two tailed test 
+        VII. One tailed test 
+        VIII. Equivalence study (a) 
+        IX. Equivalence study (b) 
+        X. Non-Inferiority Trial 
+    12. Sample Size for difference between more than two proportions : Independent samples 
+    13. Sample Size for hypothesis test about difference between proportion : Related samples
+                iii. Two tailed test 
+                iv. One tailed test 
+    14. Sample Size for Cohort Study : Relative Risk (RR)
+    c)  To estimate CI for RR with relative Error of Margin 
+    d)  To hypothesis test  about RR
+    15. Sample Size for Case-Control Study : Odds Ratio (OR)
+    c)  To estimate CI for OR with relative Error of Margin 
+    d) To hypothesis test  about OR
+    12. Sample Size for Diagnostic Study
+        a) To estimate CI for Sensitivity/Specificity of a test  
+        b) To estimate CI for positive predictive value of a test  
+        c) To estimate CI for Negative predictive value of a test  
+        d) To estimate CI  for LR+ with equal number of cases and controls 
+        e) To estimate CI  for LR+ with unequal number of cases and controls 
+        f) To estimate CI  for LR- with equal number of cases and controls 
+        g) To estimate CI  for LR- with unequal number of cases and controls 
+        h) Hypothesis test to compare the sensitivity of a new test with reference test
+        i) Hypothesis test to Compare the sensitivity(Specificity)  of  two tests say T1 and T2 (Paired Design)  
+    14. Sample Size Intra Class Correlation Coefficient (ICC) 
+    15. Sample Size Correlation Coefficient  
+
+Sample Size for
+Sr No
+To estimate CI for mean: With absolute Error of Margin and no finite correction  
+111
+To estimate CI for mean: With absolute Error of Margin and finite correction
+112
+To hypothesis test  about mean : Two tailed test 
+121
+To hypothesis test  about mean : One tailed test 
+122
+To hypothesis test  about Median-Sign Test  
+131
+To estimate CI for difference between means : With absolute Error of Margin and no finite correction  
+211
+To estimate CI for difference between means : With absolute Error of Margin and finite correction 
+212
+To hypothesis test  about difference between means : Two tailed test  
+221
+To hypothesis test  about difference between means : One tailed test  
+222
+To hypothesis test  about difference between means : Equivalence study (a) 
+223
+To hypothesis test  about difference between means : Equivalence study (b) 
+224
+To hypothesis test  about difference between means : Non-Inferiority Trial
+225
+Sample Size for hypothesis test about difference between means : Related samples : Paired ‘t’ test  
+301
+Sample Size for hypothesis test about difference between means : Related samples : Crossover Design  
+302
+Sample Size  for hypothesis test about more than two population  means- ANOVA  
+400
+To estimate CI for Proportion : With absolute Error of Margin and no finite correction 
+511
+To estimate CI for Proportion : With absolute Error of Margin and  finite correction  
+512
+To estimate CI for Proportion : With relative Error of Margin and no finite correction 
+513
+To estimate CI for Proportion : With relative Error of Margin and  finite correction
+514
+To hypothesis test  about Proportion :Two tailed test 
+521
+To hypothesis test  about Proportion :One tailed test 
+522
+To hypothesis test  about incidence rate : Two tailed test 
+541
+To hypothesis test  about incidence rate : One tailed test 
+542
+To estimate CI for difference between proportions (Independent samples)
+610
+To hypothesis test  about difference between proportions (Independent samples) : Two tailed test  
+621
+To hypothesis test  about difference between proportions (Independent samples) : One tailed test  
+622
+To hypothesis test  about difference between proportions (Independent samples) : Equivalence study (a) 
+623
+To hypothesis test  about difference between proportions (Independent samples) : Equivalence study (b) 
+624
+To hypothesis test  about difference between proportions (Independent samples) : Non-Inferiority Trial
+625
+Sample Size for diff between more than two proportions : Independent samples 
+700
+Sample Size for hypothesis test about diff between proportions(Related samples) : Two tailed test  
+801
+Sample Size for hypothesis test about diff between proportions(Related samples) : One tailed test  
+802
+To estimate CI for RR with relative Error of Margin 
+901
+To hypothesis test  about RR
+902
+Sample Size for Case-Control Study : To estimate CI for   OR with relative Error of Margin 
+1010
+Sample Size for Case-Control Study : To hypothesis test  about   OR
+1020
+To estimate CI for Sensitivity/Specificity of a test  
+1110
+To estimate CI for positive predictive value of a test  
+1120
+To estimate CI for Negative predictive value of a test  
+1130
+To estimate CI  for LR+ with equal number of cases and controls 
+1140
+To estimate CI  for LR+ with unequal number of cases and controls 
+1150
+To estimate CI  for LR- with equal number of cases and controls 
+1160
+To estimate CI  for LR- with unequal number of cases and controls 
+1170
+Hypothesis test to compare the sensitivity of a new test with reference test
+1180
+Hypothesis test to Compare the sensitivity(Specificity)  of  two tests say T1 and T2 (Paired Design)  
+1190
+Sample Size Intra Class Correlation Coefficient (ICC) 
+1200
+Sample Size Correlation Coefficient  
+1300
+

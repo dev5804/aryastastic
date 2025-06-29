@@ -1,5 +1,10 @@
-// Difference in Proportions Sample Size Calculators
-import { getZValue, getZValueOneTailed, getZValueOneTailedAlpha, CalculatorResult } from './utils';
+// Sample Size Calculator for Difference between Proportions — Complete Implementation
+import {
+  getZValue,
+  getZValueOneTailed,
+  getZValueOneTailedAlpha,
+  CalculatorResult
+} from './utils';
 
 // Independent Groups Calculators
 
