@@ -39,7 +39,7 @@ import {
 } from '../lib/calculators/singleMean';
 
 export default function CalculatorPage() {
-  const [activeGroup, setActiveGroup] = useState('single-mean');
+  const [activeGroup] = useState('single-mean');
   const [activeTab, setActiveTab] = useState('single-mean-ci');
   const calculatorRef = useRef<HTMLDivElement>(null);
   const [results, setResults] = useState<{
