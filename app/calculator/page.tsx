@@ -136,7 +136,7 @@ export default function CalculatorPage() {
       name: 'Sample Size for hypothesis test about difference between means: Related samples',
       icon: '🔗',
       tabs: [
-        { id: 'diff-means-paired', name: 'Paired &apos;t&apos; test', icon: '🔗' },
+        { id: 'diff-means-paired', name: 'Paired ‘t’ test', icon: '🔗' },
         { id: 'diff-means-crossover', name: 'Crossover Design', icon: '🔗' }
       ]
     },
