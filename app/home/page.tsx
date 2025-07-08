@@ -20,9 +20,9 @@ export default function HomePage() {
             Why is it essential to consult a statistician before conducting a Quantitative Research?
           </h2>
           <div className="text-base md:text-lg text-slate-700 mb-2 font-medium">
-            <span className="block text-slate-800 font-serif mb-2">"There is growing concern that a substantial proportion of scientific research may in fact be false."</span>
+            <span className="block text-slate-800 font-serif mb-2">&quot;There is growing concern that a substantial proportion of scientific research may in fact be false.&quot;</span>
             <span className="block text-xs text-slate-500 mb-2">(Ioannidis J.P.A. Why Most Published Research Findings Are False. PLoS Med 2(8): e124, 2005)</span>
-            <span className="block text-slate-800 font-serif mb-2">"The most published research is not reproducible, not replicable, or false."</span>
+            <span className="block text-slate-800 font-serif mb-2">&quot;The most published research is not reproducible, not replicable, or false.&quot;</span>
             <span className="block text-xs text-slate-500">(Ref: John P. Ioannidis et al. Page 5, Nature Publication Research Policy Panel Annual Review of Statistics and its Application Vol 10: 109-132, 2023)</span>
           </div>
         </div>
@@ -39,7 +39,7 @@ export default function HomePage() {
             <li>How well was the population under investigation identified?</li>
             <li>If required, how well was the comparison population identified?</li>
             <li>How well-defined and justified are the inclusion and exclusion criteria?</li>
-            <li>To what extent does the study's design align with the research question?</li>
+            <li>To what extent does the study&apos;s design align with the research question?</li>
             <li>To what extent are all input, exposures, predictors, potential confounders, extraneous variable, and outcome variables identified and measured?</li>
             <li>Is any proxy variable used? If yes, to what extent is it justified?</li>
             <li>If required, was issue of multicollinearity identified and addressed?</li>
@@ -67,4 +67,4 @@ export default function HomePage() {
       </div>
     </div>
   );
-} 
+}

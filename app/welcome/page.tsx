@@ -1,11 +1,13 @@
 "use client";
 
+import Image from 'next/image';
+
 export default function WelcomePage() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-cyan-100 via-teal-50 to-blue-100 flex flex-col items-center justify-center pt-28">
       {/* Logo - just the image, no card or border */}
       <div className="mb-10 flex justify-center">
-        <img src="/logo.png" alt="Statistical Radial Logo" className="w-40 h-40 object-contain" />
+        <Image src="/logo.png" alt="Statistical Radial Logo" width={160} height={160} className="w-40 h-40 object-contain" />
       </div>
       {/* Quote */}
       <div className="max-w-2xl w-full mb-8">
@@ -32,4 +34,4 @@ export default function WelcomePage() {
       </div>
     </div>
   );
-} 
+}

@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -12,7 +13,7 @@ export default function Navbar() {
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
           <div className="flex-shrink-0 flex items-center gap-2">
-            <img src="/logo.png" alt="Logo" className="w-8 h-8 object-contain" />
+            <Image src="/logo.png" alt="Logo" width={32} height={32} className="w-8 h-8 object-contain" />
             <Link href="/" className="text-xl font-medium text-slate-800 tracking-wider uppercase">
               Arya Statistics
             </Link>
@@ -144,4 +145,4 @@ export default function Navbar() {
       )}
     </nav>
   );
-} 
+}
