@@ -4,4 +4,5 @@ export * from './singleMean';
 export * from './differenceMeans';
 export * from './singleProportion';
 export * from './differenceProportions';
-export * from './epidemiological'; 
+export * from './epidemiological';
+export * from './advancedCalculators'; 

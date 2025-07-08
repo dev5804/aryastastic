@@ -132,38 +132,46 @@ export const calculateDiffMeansCIFinite = (
 export const calculateDiffMeansTwoTailed = (
   alpha: number,
   power: number,
-  effectSize: number,
+  populationMean1: number,
+  populationMean2: number,
   stdDev1: number,
   stdDev2: number
 ): CalculatorResult => {
   try {
     const zAlpha = getZValue((1 - alpha) * 100);
     const zBeta = getZValueOneTailed(power);
+    const effectSize = Math.abs(populationMean1 - populationMean2);
     const pooledVar = stdDev1 ** 2 + stdDev2 ** 2;
     const nExact = (2 * (zAlpha + zBeta) ** 2 * pooledVar) / (effectSize ** 2);
     const n = Math.ceil(nExact);
 
     const calculations = [
+      `=== HYPOTHESIS TEST FOR DIFFERENCE BETWEEN MEANS (TWO-TAILED) ===`,
+      ``,
       `Given:`,
       `• Significance Level (α) = ${alpha}`,
       `• Power (1-β) = ${power}`,
-      `• Effect Size (|μ₁ - μ₂|) = ${effectSize}`,
-      `• Standard Deviation Group 1 (σ1) = ${stdDev1}`,
-      `• Standard Deviation Group 2 (σ2) = ${stdDev2}`,
+      `• Population Mean 1 (μ₁) = ${populationMean1}`,
+      `• Population Mean 2 (μ₂) = ${populationMean2}`,
+      `• Population SD 1 (σ₁) = ${stdDev1}`,
+      `• Population SD 2 (σ₂) = ${stdDev2}`,
       ``,
-      `Step 1: Find Z-values`,
+      `Step 1: Calculate effect size`,
+      `|Effect| = |μ₁ - μ₂| = |${populationMean1} - ${populationMean2}| = ${effectSize}`,
+      ``,
+      `Step 2: Find Z-values`,
       `Z_{α/2} = ${zAlpha.toFixed(4)}`,
       `Z_{β} = ${zBeta.toFixed(4)}`,
       ``,
-      `Step 2: Calculate pooled variance`,
-      `σ²pooled = σ1² + σ2² = ${stdDev1}² + ${stdDev2}² = ${pooledVar.toFixed(4)}`,
+      `Step 3: Calculate pooled variance`,
+      `σ²pooled = σ₁² + σ₂² = ${stdDev1}² + ${stdDev2}² = ${pooledVar.toFixed(4)}`,
       ``,
-      `Step 3: Apply the formula for two independent groups`,
+      `Step 4: Apply the formula for two independent groups`,
       `n = 2 × (Z_{α/2} + Z_{β})² × σ²pooled / δ²`,
       `n = 2 × (${zAlpha.toFixed(4)} + ${zBeta.toFixed(4)})² × ${pooledVar.toFixed(4)} / ${effectSize}²`,
       `n = ${nExact.toFixed(4)}`,
       ``,
-      `Step 4: Round up to nearest integer`,
+      `Step 5: Round up to nearest integer`,
       `Required sample size per group = ${n}`
     ];
 
@@ -171,7 +179,7 @@ export const calculateDiffMeansTwoTailed = (
       sampleSize: n,
       power: power,
       effectSize: effectSize / Math.sqrt(pooledVar),
-      interpretation: `For a two-tailed test comparing two independent means with α=${alpha}, power=${power}, and effect size=${effectSize}, you need ${n} subjects per group (total N = ${2*n}).`,
+      interpretation: `For a two-tailed test comparing two independent means with α=${alpha}, power=${power}, testing μ₁=${populationMean1} vs μ₂=${populationMean2}, you need ${n} subjects per group (total N = ${2*n}).`,
       calculations: calculations
     };
   } catch {
@@ -189,37 +197,46 @@ export const calculateDiffMeansTwoTailed = (
 export const calculateDiffMeansOneTailed = (
   alpha: number,
   power: number,
-  effectSize: number,
+  populationMean1: number,
+  populationMean2: number,
   stdDev1: number,
   stdDev2: number
 ): CalculatorResult => {
   try {
     const zAlpha = getZValueOneTailedAlpha(alpha);
     const zBeta = getZValueOneTailed(power);
+    const effectSize = Math.abs(populationMean1 - populationMean2);
     const pooledVar = stdDev1 ** 2 + stdDev2 ** 2;
     const nExact = (2 * pooledVar * (zAlpha + zBeta) ** 2) / (effectSize ** 2);
     const n = Math.ceil(nExact);
 
     const calculations = [
+      `=== HYPOTHESIS TEST FOR DIFFERENCE BETWEEN MEANS (ONE-TAILED) ===`,
+      ``,
       `Given:`,
       `• Significance Level (α) = ${alpha}`,
       `• Power (1-β) = ${power}`,
-      `• Effect Size (δ) = ${effectSize}`,
-      `• Standard Deviation Group 1 (σ1) = ${stdDev1}`,
-      `• Standard Deviation Group 2 (σ2) = ${stdDev2}`,
+      `• Population Mean 1 (μ₁) = ${populationMean1}`,
+      `• Population Mean 2 (μ₂) = ${populationMean2}`,
+      `• Population SD 1 (σ₁) = ${stdDev1}`,
+      `• Population SD 2 (σ₂) = ${stdDev2}`,
       ``,
-      `Step 1: Find Z-values (one-tailed)`,
+      `Step 1: Calculate effect size`,
+      `|Effect| = |μ₁ - μ₂| = |${populationMean1} - ${populationMean2}| = ${effectSize}`,
+      ``,
+      `Step 2: Find Z-values (one-tailed)`,
       `Z_{α} = ${zAlpha.toFixed(4)}`,
       `Z_{β} = ${zBeta.toFixed(4)}`,
       ``,
-      `Step 2: Calculate pooled variance`,
-      `σ²pooled = σ1² + σ2² = ${pooledVar.toFixed(4)}`,
+      `Step 3: Calculate pooled variance`,
+      `σ²pooled = σ₁² + σ₂² = ${stdDev1}² + ${stdDev2}² = ${pooledVar.toFixed(4)}`,
       ``,
-      `Step 3: Apply the formula`,
+      `Step 4: Apply the formula`,
       `n = 2 × σ²pooled × (Z_{α} + Z_{β})² / δ²`,
+      `n = 2 × ${pooledVar.toFixed(4)} × (${zAlpha.toFixed(4)} + ${zBeta.toFixed(4)})² / ${effectSize}²`,
       `n = ${nExact.toFixed(4)}`,
       ``,
-      `Step 4: Round up to nearest integer`,
+      `Step 5: Round up to nearest integer`,
       `Required sample size per group = ${n}`
     ];
 
@@ -227,7 +244,7 @@ export const calculateDiffMeansOneTailed = (
       sampleSize: n,
       power: power,
       effectSize: effectSize / Math.sqrt(pooledVar),
-      interpretation: `For a one-tailed test comparing two independent means with α=${alpha}, power=${power}, and effect size=${effectSize}, you need ${n} subjects per group (total N = ${2*n}).`,
+      interpretation: `For a one-tailed test comparing two independent means with α=${alpha}, power=${power}, testing μ₁=${populationMean1} vs μ₂=${populationMean2}, you need ${n} subjects per group (total N = ${2*n}).`,
       calculations: calculations
     };
   } catch {
@@ -413,38 +430,78 @@ export const calculateDiffMeansNonInf = (
 
 // Related Groups Calculators
 
-export const calculateDiffMeansPaired = (alpha: number, power: number, effectSize: number, stdDevDiff: number): CalculatorResult => {
+export const calculateDiffMeansPaired = (
+  alpha: number, 
+  power: number, 
+  meanBefore: number, 
+  meanAfter: number, 
+  stdDevBefore: number, 
+  stdDevAfter: number
+): CalculatorResult => {
   try {
-    const zAlpha = getZValue((1 - alpha) * 100);
+    // Calculate effect size (difference between means)
+    const effectSize = Math.abs(meanAfter - meanBefore);
+    
+    // Calculate pooled standard deviation of differences
+    // For paired t-test, we use the standard deviation of the differences
+    // This is typically calculated from the correlation between before/after measurements
+    // For simplicity, we'll use the larger of the two SDs as an approximation
+    const stdDevDiff = Math.max(stdDevBefore, stdDevAfter);
+    
+    // Two-tailed test
+    const zAlphaTwoTailed = getZValue((1 - alpha) * 100);
     const zBeta = getZValueOneTailed(power);
-    const nExact = Math.pow((zAlpha + zBeta) * stdDevDiff / effectSize, 2);
-    const n = Math.ceil(nExact);
+    const n1Exact = Math.pow((zAlphaTwoTailed + zBeta) * stdDevDiff / effectSize, 2);
+    const n1 = Math.ceil(n1Exact);
+    
+    // One-tailed test
+    const zAlphaOneTailed = getZValueOneTailedAlpha(alpha);
+    const n2Exact = Math.pow((zAlphaOneTailed + zBeta) * stdDevDiff / effectSize, 2);
+    const n2 = Math.ceil(n2Exact);
     
     const calculations = [
+      `=== PAIRED 'T' TEST SAMPLE SIZE CALCULATION ===`,
+      ``,
       `Given:`,
-      `• Significance Level (α) = ${alpha}`,
+      `• Level of Significance (α) = ${alpha}`,
       `• Power (1-β) = ${power}`,
-      `• Effect Size (δ) = ${effectSize}`,
-      `• Standard Deviation of Differences (σd) = ${stdDevDiff}`,
+      `• Mean of variable of interest before intervention = ${meanBefore}`,
+      `• Mean of variable of interest after intervention = ${meanAfter}`,
+      `• SD of variable of interest before intervention = ${stdDevBefore}`,
+      `• SD of variable of interest after intervention = ${stdDevAfter}`,
       ``,
-      `Step 1: Find Z-values`,
-      `Z_{α/2} = ${zAlpha.toFixed(4)}`,
+      `Step 1: Calculate effect size`,
+      `|Effect| = |Mean_after - Mean_before| = |${meanAfter} - ${meanBefore}| = ${effectSize}`,
+      ``,
+      `Step 2: Estimate SD of differences`,
+      `SD_diff ≈ max(SD_before, SD_after) = max(${stdDevBefore}, ${stdDevAfter}) = ${stdDevDiff}`,
+      ``,
+      `Step 3: Two-tailed test calculation`,
+      `Z_{α/2} = ${zAlphaTwoTailed.toFixed(4)}`,
       `Z_{β} = ${zBeta.toFixed(4)}`,
+      `n₁ = ((Z_{α/2} + Z_{β}) × SD_diff / |Effect|)²`,
+      `n₁ = ((${zAlphaTwoTailed.toFixed(4)} + ${zBeta.toFixed(4)}) × ${stdDevDiff} / ${effectSize})²`,
+      `n₁ = ${n1Exact.toFixed(4)}`,
+      `n₁ = ${n1} (rounded up)`,
       ``,
-      `Step 2: Apply paired t-test formula`,
-      `n = ((Z_{α/2} + Z_{β}) × σd / δ)²`,
-      `n = ((${zAlpha.toFixed(4)} + ${zBeta.toFixed(4)}) × ${stdDevDiff} / ${effectSize})²`,
-      `n = ${nExact.toFixed(4)}`,
+      `Step 4: One-tailed test calculation`,
+      `Z_{α} = ${zAlphaOneTailed.toFixed(4)}`,
+      `Z_{β} = ${zBeta.toFixed(4)}`,
+      `n₂ = ((Z_{α} + Z_{β}) × SD_diff / |Effect|)²`,
+      `n₂ = ((${zAlphaOneTailed.toFixed(4)} + ${zBeta.toFixed(4)}) × ${stdDevDiff} / ${effectSize})²`,
+      `n₂ = ${n2Exact.toFixed(4)}`,
+      `n₂ = ${n2} (rounded up)`,
       ``,
-      `Step 3: Round up to nearest integer`,
-      `Required sample size = ${n} pairs`
+      `Results:`,
+      `• Sample Size – Two tailed test (n₁) = ${n1}`,
+      `• Sample Size – One tailed test (n₂) = ${n2}`
     ];
     
     return {
-      sampleSize: n,
+      sampleSize: n1, // Return two-tailed as primary result
       power: power,
       effectSize: effectSize / stdDevDiff,
-      interpretation: `For a paired t-test with α=${alpha}, power=${power}, and effect size=${effectSize}, you need ${n} paired observations.`,
+      interpretation: `For a paired t-test with α=${alpha}, power=${power}, testing before (${meanBefore}) vs after (${meanAfter}): Two-tailed test requires ${n1} subjects, One-tailed test requires ${n2} subjects.`,
       calculations: calculations
     };
   } catch {
@@ -458,38 +515,61 @@ export const calculateDiffMeansPaired = (alpha: number, power: number, effectSiz
   }
 };
 
-export const calculateDiffMeansCrossover = (alpha: number, power: number, effectSize: number, stdDevWithin: number, carryoverEffect: number): CalculatorResult => {
+export const calculateDiffMeansCrossover = (
+  alpha: number, 
+  power: number, 
+  stdDevDiff: number, 
+  treatmentEffect: number
+): CalculatorResult => {
   try {
-    const zAlpha = getZValue((1 - alpha) * 100);
+    // Two-tailed test
+    const zAlphaTwoTailed = getZValue((1 - alpha) * 100);
     const zBeta = getZValueOneTailed(power);
-    const adjustedVariance = stdDevWithin * stdDevWithin + carryoverEffect * carryoverEffect;
-    const nExact = (4 * adjustedVariance * Math.pow(zAlpha + zBeta, 2)) / (effectSize * effectSize);
-    const n = Math.ceil(nExact);
+    const n1Exact = (4 * stdDevDiff * stdDevDiff * Math.pow(zAlphaTwoTailed + zBeta, 2)) / (treatmentEffect * treatmentEffect);
+    const n1 = Math.ceil(n1Exact);
+    
+    // One-tailed test
+    const zAlphaOneTailed = getZValueOneTailedAlpha(alpha);
+    const n2Exact = (4 * stdDevDiff * stdDevDiff * Math.pow(zAlphaOneTailed + zBeta, 2)) / (treatmentEffect * treatmentEffect);
+    const n2 = Math.ceil(n2Exact);
     
     const calculations = [
+      `=== CROSSOVER DESIGN SAMPLE SIZE CALCULATION ===`,
+      ``,
       `Given:`,
-      `• Significance Level (α) = ${alpha}`,
+      `• Level of Significance (α) = ${alpha}`,
       `• Power (1-β) = ${power}`,
-      `• Effect Size (δ) = ${effectSize}`,
-      `• Within-Subject Standard Deviation (σw) = ${stdDevWithin}`,
-      `• Carryover Effect (γ) = ${carryoverEffect}`,
+      `• SD of difference between treatment scores = ${stdDevDiff}`,
+      `• Treatment effect (Δ) = ${treatmentEffect}`,
       ``,
-      `Step 1: Calculate adjusted variance`,
-      `σ²adj = σw² + γ² = ${stdDevWithin}² + ${carryoverEffect}² = ${adjustedVariance.toFixed(4)}`,
+      `Step 1: Two-tailed test calculation`,
+      `Z_{α/2} = ${zAlphaTwoTailed.toFixed(4)}`,
+      `Z_{β} = ${zBeta.toFixed(4)}`,
+      `n₁ = 4 × SD_diff² × (Z_{α/2} + Z_{β})² / Δ²`,
+      `n₁ = 4 × ${stdDevDiff}² × (${zAlphaTwoTailed.toFixed(4)} + ${zBeta.toFixed(4)})² / ${treatmentEffect}²`,
+      `n₁ = 4 × ${(stdDevDiff * stdDevDiff).toFixed(4)} × ${(zAlphaTwoTailed + zBeta).toFixed(4)}² / ${(treatmentEffect * treatmentEffect).toFixed(4)}`,
+      `n₁ = ${n1Exact.toFixed(4)}`,
+      `n₁ = ${n1} (rounded up)`,
       ``,
-      `Step 2: Apply crossover formula`,
-      `n = 4 × σ²adj × (Z_{α/2} + Z_{β})² / δ²`,
-      `n = ${nExact.toFixed(4)}`,
+      `Step 2: One-tailed test calculation`,
+      `Z_{α} = ${zAlphaOneTailed.toFixed(4)}`,
+      `Z_{β} = ${zBeta.toFixed(4)}`,
+      `n₂ = 4 × SD_diff² × (Z_{α} + Z_{β})² / Δ²`,
+      `n₂ = 4 × ${stdDevDiff}² × (${zAlphaOneTailed.toFixed(4)} + ${zBeta.toFixed(4)})² / ${treatmentEffect}²`,
+      `n₂ = 4 × ${(stdDevDiff * stdDevDiff).toFixed(4)} × ${(zAlphaOneTailed + zBeta).toFixed(4)}² / ${(treatmentEffect * treatmentEffect).toFixed(4)}`,
+      `n₂ = ${n2Exact.toFixed(4)}`,
+      `n₂ = ${n2} (rounded up)`,
       ``,
-      `Step 3: Round up to nearest integer`,
-      `Required sample size = ${n} subjects`
+      `Results:`,
+      `• Sample Size – Two tailed test (n₁) = ${n1}`,
+      `• Sample Size – One tailed test (n₂) = ${n2}`
     ];
     
     return {
-      sampleSize: n,
+      sampleSize: n1, // Return two-tailed as primary result
       power: power,
-      effectSize: effectSize / Math.sqrt(adjustedVariance),
-      interpretation: `For a crossover design with α=${alpha}, power=${power}, and effect size=${effectSize}, accounting for carryover effects, you need ${n} subjects.`,
+      effectSize: treatmentEffect / stdDevDiff,
+      interpretation: `For a crossover design with α=${alpha}, power=${power}, treatment effect Δ=${treatmentEffect}: Two-tailed test requires ${n1} subjects, One-tailed test requires ${n2} subjects.`,
       calculations: calculations
     };
   } catch {

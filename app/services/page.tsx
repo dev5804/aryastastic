@@ -47,9 +47,6 @@ export default function ServicesPage() {
               Trustworthy and customized services with a guarantee based on 32 years of experience, ensuring your academic goals are successfully met well in time.
             </p>
             <div className="flex flex-col gap-4">
-              <button className="px-8 py-3 bg-teal-600 text-white rounded-lg font-medium text-left hover:bg-teal-700 transition-all duration-300">
-                Get Started
-              </button>
             </div>
           </div>
         </div>
@@ -221,32 +218,6 @@ export default function ServicesPage() {
                 <div className="text-slate-600 text-xs lg:text-sm font-medium uppercase tracking-wide">Response Time</div>
               </div>
             </div>
-            
-            <div className="text-center">
-              <button className="px-8 py-3 bg-teal-600 text-white rounded-lg font-medium hover:bg-teal-700 transition-all duration-300">
-                Start Your Project
-              </button>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* CTA Section */}
-      <section className="py-16 lg:py-32 bg-slate-50">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl lg:text-5xl font-light text-slate-800 mb-8 tracking-tight">
-            Ready to Begin?
-          </h2>
-          <p className="text-base lg:text-lg text-slate-600 mb-12 font-light">
-            Let&apos;s discuss your research project and how we can help you achieve your academic goals
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="px-8 py-3 bg-teal-600 text-white rounded-lg font-medium hover:bg-teal-700 transition-all duration-300">
-              Get Free Consultation
-            </button>
-            <button className="px-8 py-3 text-slate-600 rounded-lg font-medium hover:text-slate-800 transition-all duration-300">
-              View Sample Work
-            </button>
           </div>
         </div>
       </section>

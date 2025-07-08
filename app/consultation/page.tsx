@@ -47,14 +47,6 @@ export default function ConsultationPage() {
             <p className="text-base lg:text-lg text-slate-600 mb-8 leading-relaxed font-light">
               Complete information guide for effective statistical consultation. Please prepare these details before your consultation session.
             </p>
-            <div className="flex flex-col gap-4">
-              <button className="px-8 py-3 bg-teal-600 text-white rounded-lg font-medium text-left hover:bg-teal-700 transition-all duration-300">
-                Schedule Consultation
-              </button>
-              <button className="px-8 py-3 text-slate-600 rounded-lg font-medium text-left hover:text-slate-800 transition-all duration-300">
-                Download Checklist
-              </button>
-            </div>
           </div>
         </div>
       </section>
@@ -157,11 +149,11 @@ export default function ConsultationPage() {
               <div className="bg-teal-50 p-4 lg:p-6 rounded-2xl">
                 <h4 className="text-base lg:text-lg font-medium text-slate-800 mb-3">Observational Studies</h4>
                 <ul className="text-slate-600 font-light text-sm lg:text-base space-y-1">
-                  <li>• Prospective</li>
-                  <li>• Retrospective</li>
-                  <li>• Cross-sectional</li>
-                  <li>• Descriptive</li>
-                  <li>• Explorative</li>
+                  <li>• <strong>Prospective</strong> - following participants forward in time</li>
+                  <li>• <strong>Retrospective</strong> - looking back at existing data</li>
+                  <li>• <strong>Cross-sectional</strong> - snapshot at one point in time</li>
+                  <li>• <strong>Descriptive</strong> - describing characteristics</li>
+                  <li>• <strong>Explorative</strong> - exploring relationships</li>
                 </ul>
               </div>
               
@@ -218,7 +210,7 @@ export default function ConsultationPage() {
               {
                 title: "Proxy Variables",
                 subtitle: "With Justification",
-                description: "Substitute variables used when direct measurement isn't possible",
+                description: "Substitute variables used when direct measurement isn't possible. Include clear justification for why proxy variables are necessary and how they relate to the actual variables of interest.",
                 color: "teal"
               },
               {
@@ -284,7 +276,7 @@ export default function ConsultationPage() {
               <div className="border-l-4 border-teal-400 pl-6">
                 <h4 className="text-base lg:text-lg font-medium text-slate-800 mb-3">General Overview</h4>
                 <p className="text-slate-600 font-light text-sm lg:text-base">
-                  Broad context gradually narrowing to your specific subject
+                  Provide a general overview of the topic, then gradually narrow the focus to the specific subject
                 </p>
               </div>
               
@@ -305,7 +297,7 @@ export default function ConsultationPage() {
               <div className="border-l-4 border-cyan-500 pl-6">
                 <h4 className="text-base lg:text-lg font-medium text-slate-800 mb-3">Purpose of Study</h4>
                 <p className="text-slate-600 font-light text-sm lg:text-base">
-                  Why this research question needs to be addressed
+                  Explain the question that the research is trying to solve, and why it needs to be addressed
                 </p>
               </div>
             </div>
@@ -338,26 +330,6 @@ export default function ConsultationPage() {
                 or analytical approach to guide the consultation process.
               </p>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* CTA Section */}
-      <section className="py-16 lg:py-32 bg-slate-50">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl lg:text-5xl font-light text-slate-800 mb-8 tracking-tight">
-            Ready for Consultation?
-          </h2>
-          <p className="text-base lg:text-lg text-slate-600 mb-12 font-light">
-            Prepare your information using this guide and schedule your statistical consultation
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="px-8 py-3 bg-teal-600 text-white rounded-lg font-medium hover:bg-teal-700 transition-all duration-300">
-              Schedule Consultation
-            </button>
-            <button className="px-8 py-3 text-slate-600 rounded-lg font-medium hover:text-slate-800 transition-all duration-300">
-              Contact Dr. Basannar
-            </button>
           </div>
         </div>
       </section>

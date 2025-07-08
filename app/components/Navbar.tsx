@@ -11,15 +11,28 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
-          <div className="flex-shrink-0">
+          <div className="flex-shrink-0 flex items-center gap-2">
+            <img src="/logo.png" alt="Logo" className="w-8 h-8 object-contain" />
             <Link href="/" className="text-xl font-medium text-slate-800 tracking-wider uppercase">
               Arya Statistics
             </Link>
           </div>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-16">
-            <div className="flex space-x-12">
+          <div className="hidden md:flex items-center gap-10">
+            <div className="flex gap-8">
+              <a 
+                href="/welcome" 
+                className="text-slate-600 hover:text-teal-600 font-light text-sm uppercase tracking-wider transition-colors duration-300"
+              >
+                Welcome
+              </a>
+              <a 
+                href="/home" 
+                className="text-slate-600 hover:text-teal-600 font-light text-sm uppercase tracking-wider transition-colors duration-300"
+              >
+                Home
+              </a>
               <a 
                 href="/services" 
                 className="text-slate-600 hover:text-teal-600 font-light text-sm uppercase tracking-wider transition-colors duration-300"
@@ -36,7 +49,7 @@ export default function Navbar() {
                 href="/about" 
                 className="text-slate-600 hover:text-teal-600 font-light text-sm uppercase tracking-wider transition-colors duration-300"
               >
-                About Dr. Basannar
+                About
               </a>
               <a 
                 href="/contact" 
@@ -45,7 +58,6 @@ export default function Navbar() {
                 Contact
               </a>
             </div>
-            
             <a 
               href="/calculator"
               className="px-6 py-2 border border-teal-600 text-teal-600 text-sm font-light uppercase tracking-wider rounded hover:bg-teal-600 hover:text-white transition-all duration-300 inline-block text-center"
@@ -77,6 +89,20 @@ export default function Navbar() {
         <div className="md:hidden">
           <div className="px-4 pt-4 pb-6 space-y-4 bg-white/95 backdrop-blur-md border-t border-slate-100">
             <a 
+              href="/welcome" 
+              className="block px-3 py-2 text-slate-600 hover:text-teal-600 font-light text-sm uppercase tracking-wider"
+              onClick={() => setIsOpen(false)}
+            >
+              Welcome
+            </a>
+            <a 
+              href="/home" 
+              className="block px-3 py-2 text-slate-600 hover:text-teal-600 font-light text-sm uppercase tracking-wider"
+              onClick={() => setIsOpen(false)}
+            >
+              Home
+            </a>
+            <a 
               href="/services" 
               className="block px-3 py-2 text-slate-600 hover:text-teal-600 font-light text-sm uppercase tracking-wider"
               onClick={() => setIsOpen(false)}
@@ -95,7 +121,7 @@ export default function Navbar() {
               className="block px-3 py-2 text-slate-600 hover:text-teal-600 font-light text-sm uppercase tracking-wider"
               onClick={() => setIsOpen(false)}
             >
-              About Dr. Basannar
+              About
             </a>
             <a 
               href="/contact" 

@@ -18,7 +18,7 @@ export default function AboutPage() {
             </div>
             
             <h1 className="text-2xl lg:text-3xl font-light text-slate-800 mb-4 tracking-tight">
-              Dr. Dashrath R Basannar
+              Dashrath R Basannar
             </h1>
             <p className="text-lg text-slate-600 mb-6 font-light">
               Scientist F (Retd)
@@ -46,7 +46,7 @@ export default function AboutPage() {
           <div className="max-w-lg px-4 lg:px-12">
             <div className="mb-8">
               <span className="inline-block px-4 py-2 bg-teal-50 rounded-full text-teal-700 text-sm font-medium tracking-wide">
-                ABOUT DR. BASANNAR
+                ABOUT Dashrath R BASANNAR
               </span>
             </div>
             <h2 className="text-3xl lg:text-5xl font-light text-slate-800 mb-8 tracking-tight leading-tight">
@@ -55,7 +55,7 @@ export default function AboutPage() {
               CONSULTANT
             </h2>
             <p className="text-base lg:text-lg text-slate-600 mb-8 leading-relaxed font-light">
-              With 32 years of distinguished service as a scientist at AFMC Pune, Dr. Basannar brings unparalleled expertise in clinical statistics, research methodology, and data analysis to academic and medical research.
+              With 32 years of distinguished service as a scientist at AFMC Pune, Dashrath R Basannar brings unparalleled expertise in clinical statistics, research methodology, and data analysis to academic and medical research.
             </p>
             <div className="space-y-4">
               <div className="flex items-center gap-3">
@@ -136,7 +136,7 @@ export default function AboutPage() {
                   <h3 className="text-base lg:text-lg font-medium text-slate-800">Clinical Research Excellence</h3>
                 </div>
                 <p className="text-slate-600 font-light leading-relaxed text-sm lg:text-base">
-                  32 years as a scientist at AFMC Pune, reviewing 500+ research articles for prestigious medical journals including MJAFI, IJMR, and Industrial Psychiatry Journal.
+                  32 years as a scientist at AFMC Pune, reviewing 500+ research articles for prestigious medical journals including MJAFI, IJMR, and Industrial Psychiatry Journal. Member of the editorial board of the Association of Industrial Psychiatry of India.
                 </p>
               </div>
               
@@ -156,7 +156,27 @@ export default function AboutPage() {
                   <h3 className="text-base lg:text-lg font-medium text-slate-800">Software Development</h3>
                 </div>
                 <p className="text-slate-600 font-light leading-relaxed text-sm lg:text-base">
-                  Developed specialized software for clinical research methodology training and sample size calculations, widely used across Maharashtra&apos;s teaching institutes.
+                  Developed specialized software for clinical research methodology training under AFMRC project with integrated sample size calculator, widely used across Maharashtra&apos;s teaching institutes. Currently developing a web-based sample size calculator (under testing).
+                </p>
+              </div>
+
+              <div>
+                <div className="flex items-center gap-3 mb-3">
+                  <span className="text-xl lg:text-2xl font-light text-cyan-500">04</span>
+                  <h3 className="text-base lg:text-lg font-medium text-slate-800">Resource Person & Training</h3>
+                </div>
+                <p className="text-slate-600 font-light leading-relaxed text-sm lg:text-base">
+                  Contributed as a resource person and delivered talks on clinical statistics and questionnaire designing in workshops conducted by AFMC, MUHS, AFMRC, CME, WHO fellowship training courses and various other organizations.
+                </p>
+              </div>
+
+              <div>
+                <div className="flex items-center gap-3 mb-3">
+                  <span className="text-xl lg:text-2xl font-light text-teal-600">05</span>
+                  <h3 className="text-base lg:text-lg font-medium text-slate-800">Teaching Committee</h3>
+                </div>
+                <p className="text-slate-600 font-light leading-relaxed text-sm lg:text-base">
+                  Member of teaching and training committee approved by MUHS for research methodology course.
                 </p>
               </div>
             </div>
@@ -228,6 +248,11 @@ export default function AboutPage() {
                   <h4 className="text-base lg:text-lg font-medium text-slate-800 mb-2">Editorial Board</h4>
                   <p className="text-slate-600 font-light text-sm lg:text-base">Association of Industrial Psychiatry of India</p>
                 </div>
+
+                <div className="bg-white p-4 lg:p-6 rounded-2xl shadow-sm border border-slate-100">
+                  <h4 className="text-base lg:text-lg font-medium text-slate-800 mb-2">Research Projects</h4>
+                  <p className="text-slate-600 font-light text-sm lg:text-base">Associated with 20 AFMRC Projects and 61 publications</p>
+                </div>
               </div>
             </div>
             
@@ -238,16 +263,16 @@ export default function AboutPage() {
               
               <div className="space-y-3 lg:space-y-4">
                 {[
-                  { year: "2024", role: "Visiting Lecturer", org: "Trinity College of Engineering & Research" },
+                  { year: "Aug-Dec 2024", role: "Visiting Lecturer", org: "Trinity College of Engineering & Research, Mathematics Department" },
                   { year: "2024", role: "Visiting Faculty", org: "Maharashtra University of Health Sciences" },
-                  { year: "2024", role: "Visiting Faculty", org: "Centre for Publication Ethics, SPPU" },
-                  { year: "1991-2024", role: "Scientist", org: "Armed Forces Medical College (AFMC)" },
+                  { year: "2024", role: "Visiting Faculty", org: "Centre for Publication Ethics, Savitribai Phule Pune University" },
+                  { year: "1991-May 2024", role: "Scientist", org: "Armed Forces Medical College (AFMC), Pune" },
                   { year: "1989-91", role: "Scientist", org: "Scientific Analysis Group, DRDO" },
                   { year: "1988-89", role: "Lecturer", org: "Poona College, Statistics Department" },
                   { year: "1988", role: "Visiting Lecturer", org: "VIT, Mathematics Department" }
                 ].map((position, index) => (
                   <div key={index} className="flex gap-4 lg:gap-6 pb-3 lg:pb-4 border-b border-slate-200">
-                    <span className="text-teal-600 font-medium text-xs lg:text-sm w-16 lg:w-20 flex-shrink-0">{position.year}</span>
+                    <span className="text-teal-600 font-medium text-xs lg:text-sm w-20 lg:w-24 flex-shrink-0">{position.year}</span>
                     <div className="min-w-0 flex-1">
                       <h4 className="text-slate-800 font-medium text-sm lg:text-base">{position.role}</h4>
                       <p className="text-slate-600 font-light text-xs lg:text-sm break-words">{position.org}</p>
