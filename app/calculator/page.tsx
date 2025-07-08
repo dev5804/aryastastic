@@ -56,23 +56,6 @@ export default function CalculatorPage() {
     calculations: []
   });
 
-  const handleGroupChange = (groupId: string) => {
-    setActiveGroup(groupId);
-    // Set the first tab of the selected group as active
-    const firstTab = calculatorGroups.find(group => group.id === groupId)?.tabs[0]?.id;
-    if (firstTab) {
-      setActiveTab(firstTab);
-    }
-    // Clear results when changing groups
-    setResults({
-      sampleSize: null,
-      power: null,
-      effectSize: null,
-      interpretation: '',
-      calculations: []
-    });
-  };
-
   const handleTabChange = (tabId: string) => {
     setActiveTab(tabId);
     // Clear results when changing tabs
@@ -153,7 +136,7 @@ export default function CalculatorPage() {
       name: 'Sample Size for hypothesis test about difference between means: Related samples',
       icon: '🔗',
       tabs: [
-        { id: 'diff-means-paired', name: 'Paired \'t\' test', icon: '🔗' },
+        { id: 'diff-means-paired', name: 'Paired &apos;t&apos; test', icon: '🔗' },
         { id: 'diff-means-crossover', name: 'Crossover Design', icon: '🔗' }
       ]
     },
