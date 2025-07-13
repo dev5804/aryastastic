@@ -17,7 +17,7 @@ export const calculateSinglePropCI = (
     const d = absoluteMarginError;
     
     const nExact = (z * z * p * (1 - p)) / (d * d);
-    const n = Math.ceil(nExact);
+    const n = Math.round(nExact);
     
     const calculations = [
       `=== CI FOR PROPORTION (NO FINITE CORRECTION) ===`,
@@ -35,7 +35,7 @@ export const calculateSinglePropCI = (
       `n = ${z.toFixed(4)}² × ${p} × ${(1-p).toFixed(4)} / ${d}²`,
       `n = ${nExact.toFixed(4)}`,
       ``,
-      `Step 3: Round up`,
+      `Step 3: Round to nearest integer`,
       `Required sample size = ${n}`
     ];
     
@@ -72,7 +72,7 @@ export const calculateSinglePropCIFinite = (
     
     const n0 = (z * z * p * (1 - p)) / (d * d);
     const nExact = n0 / (1 + (n0 - 1) / N);
-    const n = Math.ceil(nExact);
+    const n = Math.round(nExact);
     
     const calculations = [
       `=== CI FOR PROPORTION (WITH FINITE CORRECTION) ===`,
@@ -91,7 +91,7 @@ export const calculateSinglePropCIFinite = (
       `n = ${n0.toFixed(4)} / (1 + ${(n0-1).toFixed(4)}/${N})`,
       `n = ${nExact.toFixed(4)}`,
       ``,
-      `Step 3: Round up`,
+      `Step 3: Round to nearest integer`,
       `Required sample size = ${n}`
     ];
     
@@ -126,7 +126,7 @@ export const calculateSinglePropCIRelative = (
     
     const absoluteMargin = r * p; // Convert relative to absolute margin
     const nExact = (z * z * p * (1 - p)) / (absoluteMargin * absoluteMargin);
-    const n = Math.ceil(nExact);
+    const n = Math.round(nExact);
     
     const calculations = [
       `=== CI FOR PROPORTION (RELATIVE MARGIN, NO FINITE CORRECTION) ===`,
@@ -144,7 +144,7 @@ export const calculateSinglePropCIRelative = (
       `n = ${z.toFixed(4)}² × ${p} × ${(1-p).toFixed(4)} / ${absoluteMargin.toFixed(4)}²`,
       `n = ${nExact.toFixed(4)}`,
       ``,
-      `Step 3: Round up`,
+      `Step 3: Round to nearest integer`,
       `Required sample size = ${n}`
     ];
     
@@ -182,7 +182,7 @@ export const calculateSinglePropCIRelativeFinite = (
     const absoluteMargin = r * p;
     const n0 = (z * z * p * (1 - p)) / (absoluteMargin * absoluteMargin);
     const nExact = n0 / (1 + (n0 - 1) / N);
-    const n = Math.ceil(nExact);
+    const n = Math.round(nExact);
     
     const calculations = [
       `=== CI FOR PROPORTION (RELATIVE MARGIN, WITH FINITE CORRECTION) ===`,
@@ -202,7 +202,7 @@ export const calculateSinglePropCIRelativeFinite = (
       `Step 3: Apply finite population correction`,
       `n = n₀ / (1 + (n₀-1)/N) = ${nExact.toFixed(4)}`,
       ``,
-      `Step 4: Round up`,
+      `Step 4: Round to nearest integer`,
       `Required sample size = ${n}`
     ];
     
@@ -241,7 +241,7 @@ export const calculateSinglePropTestTwoTailed = (
     const numerator = Math.pow(zAlpha * Math.sqrt(p0 * (1 - p0)) + zBeta * Math.sqrt(p1 * (1 - p1)), 2);
     const denominator = Math.pow(p1 - p0, 2);
     const nExact = numerator / denominator;
-    const n = Math.ceil(nExact);
+    const n = Math.round(nExact);
     
     const calculations = [
       `=== HYPOTHESIS TEST FOR PROPORTION (TWO-TAILED) ===`,
@@ -261,7 +261,7 @@ export const calculateSinglePropTestTwoTailed = (
       `n = [${zAlpha.toFixed(4)}√(${p0}×${(1-p0).toFixed(4)}) + ${zBeta.toFixed(4)}√(${p1}×${(1-p1).toFixed(4)})]² / (${p1}-${p0})²`,
       `n = ${nExact.toFixed(4)}`,
       ``,
-      `Step 3: Round up`,
+      `Step 3: Round to nearest integer`,
       `Required sample size = ${n}`
     ];
     
@@ -300,7 +300,7 @@ export const calculateSinglePropTestOneTailed = (
     const numerator = Math.pow(zAlpha * Math.sqrt(p0 * (1 - p0)) + zBeta * Math.sqrt(p1 * (1 - p1)), 2);
     const denominator = Math.pow(p1 - p0, 2);
     const nExact = numerator / denominator;
-    const n = Math.ceil(nExact);
+    const n = Math.round(nExact);
     
     const calculations = [
       `=== HYPOTHESIS TEST FOR PROPORTION (ONE-TAILED) ===`,
@@ -319,7 +319,7 @@ export const calculateSinglePropTestOneTailed = (
       `n = [Z_{α}√(p₀(1-p₀)) + Z_{β}√(p₁(1-p₁))]² / (p₁-p₀)²`,
       `n = ${nExact.toFixed(4)}`,
       ``,
-      `Step 3: Round up`,
+      `Step 3: Round to nearest integer`,
       `Required sample size = ${n}`
     ];
     
@@ -356,7 +356,7 @@ export const calculateIncidenceRateCI = (
     
     // For Poisson distribution: n = Z² / (λt × r²)
     const nExact = (z * z) / (λ * t * r * r);
-    const n = Math.ceil(nExact);
+    const n = Math.round(nExact);
     
     const calculations = [
       `=== CI FOR INCIDENCE RATE (RELATIVE MARGIN) ===`,
@@ -368,11 +368,9 @@ export const calculateIncidenceRateCI = (
       `• Time Unit = ${t}`,
       ``,
       `Step 1: Apply Poisson formula`,
-      `n = Z² / (λt × r²)`,
-      `n = ${z.toFixed(4)}² / (${λ} × ${t} × ${r}²)`,
-      `n = ${nExact.toFixed(4)}`,
+      `n = Z² / (λt × r²)`      `n = ${z.toFixed(4)}² / (${λ} × ${t} × ${r}²)`      `n = ${nExact.toFixed(4)}`,
       ``,
-      `Step 2: Round up`,
+      `Step 2: Round to nearest integer`,
       `Required sample size = ${n}`
     ];
     
@@ -414,7 +412,7 @@ export const calculateIncidenceRateTestTwoTailed = (
     const numerator = Math.pow(zAlpha * Math.sqrt(λ0) + zBeta * Math.sqrt(λ1), 2);
     const denominator = Math.pow(λ1 - λ0, 2) * t;
     const nExact = numerator / denominator;
-    const n = Math.ceil(nExact);
+    const n = Math.round(nExact);
     
     const calculations = [
       `=== HYPOTHESIS TEST FOR INCIDENCE RATE (TWO-TAILED) ===`,
@@ -430,7 +428,7 @@ export const calculateIncidenceRateTestTwoTailed = (
       `n = (Z_{α/2}√λ₀ + Z_{β}√λ₁)² / [(λ₁-λ₀)² × t]`,
       `n = ${nExact.toFixed(4)}`,
       ``,
-      `Step 2: Round up`,
+      `Step 2: Round to nearest integer`,
       `Required sample size = ${n}`
     ];
     
@@ -471,7 +469,7 @@ export const calculateIncidenceRateTestOneTailed = (
     const numerator = Math.pow(zAlpha * Math.sqrt(λ0) + zBeta * Math.sqrt(λ1), 2);
     const denominator = Math.pow(λ1 - λ0, 2) * t;
     const nExact = numerator / denominator;
-    const n = Math.ceil(nExact);
+    const n = Math.round(nExact);
     
     const calculations = [
       `=== HYPOTHESIS TEST FOR INCIDENCE RATE (ONE-TAILED) ===`,
@@ -487,7 +485,7 @@ export const calculateIncidenceRateTestOneTailed = (
       `n = (Z_{α}√λ₀ + Z_{β}√λ₁)² / [(λ₁-λ₀)² × t]`,
       `n = ${nExact.toFixed(4)}`,
       ``,
-      `Step 2: Round up`,
+      `Step 2: Round to nearest integer`,
       `Required sample size = ${n}`
     ];
     
@@ -507,4 +505,4 @@ export const calculateIncidenceRateTestOneTailed = (
       calculations: []
     };
   }
-}; 
+};

@@ -250,7 +250,7 @@ export default function CalculatorPage() {
             {/* All Categories Expanded by Default */}
             <div className="space-y-6 max-w-6xl mx-auto">
               {calculatorGroups.map((group) => (
-                <div key={group.id} className="border border-slate-200 rounded-xl overflow-hidden">
+                <div key={group.id} className="border border-slate-200 rounded-xl overflow-hidden ">
                   {/* Category Header - Non-clickable, just for display */}
                   <div className="bg-gradient-to-r from-teal-50 to-cyan-50 p-4 border-b border-slate-200">
                     <div className="flex items-center gap-3">
@@ -272,7 +272,7 @@ export default function CalculatorPage() {
                           <button
                             key={tab.id}
                             onClick={() => handleTabChange(tab.id)}
-                            className={`p-3 rounded-lg text-left transition-all duration-300 ${
+                            className={`p-3 rounded-lg text-left transition-all duration-300   cursor-pointer ${
                               activeTab === tab.id
                                 ? 'bg-teal-100 text-teal-700 border-2 border-teal-300'
                                 : 'bg-slate-50 text-slate-700 hover:bg-slate-100 border-2 border-transparent'

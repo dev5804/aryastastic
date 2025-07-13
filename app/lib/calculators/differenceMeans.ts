@@ -20,7 +20,7 @@ export const calculateDiffMeansCI = (
     const z = getZValue(confidenceLevel);
     const pooledVariance = stdDev1 ** 2 + stdDev2 ** 2;
     const nExact = (2 * z ** 2 * pooledVariance) / (marginError ** 2);
-    const n = Math.ceil(nExact);
+    const n = Math.round(nExact);
 
     const calculations = [
       `Given:`,
@@ -84,7 +84,7 @@ export const calculateDiffMeansCIFinite = (
     const avgCorrection = (correction1 + correction2) / 2;
 
     const nExact = n0 / (1 + avgCorrection);
-    const n = Math.ceil(nExact);
+    const n = Math.round(nExact);
 
     const calculations = [
       `Given:`,
@@ -143,7 +143,7 @@ export const calculateDiffMeansTwoTailed = (
     const effectSize = Math.abs(populationMean1 - populationMean2);
     const pooledVar = stdDev1 ** 2 + stdDev2 ** 2;
     const nExact = (2 * (zAlpha + zBeta) ** 2 * pooledVar) / (effectSize ** 2);
-    const n = Math.ceil(nExact);
+    const n = Math.round(nExact);
 
     const calculations = [
       `=== HYPOTHESIS TEST FOR DIFFERENCE BETWEEN MEANS (TWO-TAILED) ===`,
@@ -208,7 +208,7 @@ export const calculateDiffMeansOneTailed = (
     const effectSize = Math.abs(populationMean1 - populationMean2);
     const pooledVar = stdDev1 ** 2 + stdDev2 ** 2;
     const nExact = (2 * pooledVar * (zAlpha + zBeta) ** 2) / (effectSize ** 2);
-    const n = Math.ceil(nExact);
+    const n = Math.round(nExact);
 
     const calculations = [
       `=== HYPOTHESIS TEST FOR DIFFERENCE BETWEEN MEANS (ONE-TAILED) ===`,
@@ -271,7 +271,7 @@ export const calculateDiffMeansEquivA = (
     const zBeta = getZValueOneTailed(power);
     const pooledVar = stdDev1 ** 2 + stdDev2 ** 2;
     const nExact = (2 * pooledVar * (zAlpha + zBeta) ** 2) / (equivalenceMargin ** 2);
-    const n = Math.ceil(nExact);
+    const n = Math.round(nExact);
 
     const calculations = [
       `Given:`,
@@ -329,7 +329,7 @@ export const calculateDiffMeansEquivB = (
     const pooledVar = stdDev1 ** 2 + stdDev2 ** 2;
     const effectiveDiff = equivalenceMargin - Math.abs(expectedDiff);
     const nExact = (2 * pooledVar * (zAlpha + zBeta) ** 2) / (effectiveDiff ** 2);
-    const n = Math.ceil(nExact);
+    const n = Math.round(nExact);
 
     const calculations = [
       `Given:`,
@@ -385,7 +385,7 @@ export const calculateDiffMeansNonInf = (
     const zBeta = getZValueOneTailed(power);
     const pooledVar = stdDev1 ** 2 + stdDev2 ** 2;
     const nExact = (2 * pooledVar * (zAlpha + zBeta) ** 2) / (nonInfMargin ** 2);
-    const n = Math.ceil(nExact);
+    const n = Math.round(nExact);
 
     const calculations = [
       `Given:`,
@@ -452,12 +452,12 @@ export const calculateDiffMeansPaired = (
     const zAlphaTwoTailed = getZValue((1 - alpha) * 100);
     const zBeta = getZValueOneTailed(power);
     const n1Exact = Math.pow((zAlphaTwoTailed + zBeta) * stdDevDiff / effectSize, 2);
-    const n1 = Math.ceil(n1Exact);
+    const n1 = Math.round(n1Exact);
     
     // One-tailed test
     const zAlphaOneTailed = getZValueOneTailedAlpha(alpha);
     const n2Exact = Math.pow((zAlphaOneTailed + zBeta) * stdDevDiff / effectSize, 2);
-    const n2 = Math.ceil(n2Exact);
+    const n2 = Math.round(n2Exact);
     
     const calculations = [
       `=== PAIRED 'T' TEST SAMPLE SIZE CALCULATION ===`,
@@ -526,12 +526,12 @@ export const calculateDiffMeansCrossover = (
     const zAlphaTwoTailed = getZValue((1 - alpha) * 100);
     const zBeta = getZValueOneTailed(power);
     const n1Exact = (4 * stdDevDiff * stdDevDiff * Math.pow(zAlphaTwoTailed + zBeta, 2)) / (treatmentEffect * treatmentEffect);
-    const n1 = Math.ceil(n1Exact);
+    const n1 = Math.round(n1Exact);
     
     // One-tailed test
     const zAlphaOneTailed = getZValueOneTailedAlpha(alpha);
     const n2Exact = (4 * stdDevDiff * stdDevDiff * Math.pow(zAlphaOneTailed + zBeta, 2)) / (treatmentEffect * treatmentEffect);
-    const n2 = Math.ceil(n2Exact);
+    const n2 = Math.round(n2Exact);
     
     const calculations = [
       `=== CROSSOVER DESIGN SAMPLE SIZE CALCULATION ===`,
@@ -632,8 +632,8 @@ export const calculateEquivalenceStudyDetailed = (
     // For unequal allocation: n1 = (1 + 1/K) × base_formula
     const baseSampleSize = pooledVariance * (zAlphaHalf + zBeta) ** 2 / (equivalenceThreshold ** 2);
     const n1Exact = (1 + 1/allocationRatio) * baseSampleSize;
-    const n1 = Math.ceil(n1Exact);
-    const n2 = Math.ceil(allocationRatio * n1);
+    const n1 = Math.round(n1Exact);
+    const n2 = Math.round(allocationRatio * n1);
     
     const calculations = [
       `=== EQUIVALENCE STUDY CALCULATION ===`,
@@ -717,4 +717,4 @@ export const calculateEquivalenceStudyDetailed = (
       calculations: ['Error occurred during calculation']
     };
   }
-}; 
+};
